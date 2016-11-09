@@ -1,0 +1,118 @@
+body.single-post .hero,
+body.page .hero {
+  background-color: @white;
+}
+
+body.normal.single-post article.post > header h1 {
+  padding-top: 12px;
+}
+body.single-post {
+  .span8 {
+    border-right: 1px solid @grayVoOC;
+  }
+  .span4 {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+    .widget:first-child {
+      padding-top: 0px;
+    }
+  }
+  .hero.is-image img {
+    margin-bottom: 4px;
+    float: left;
+  }
+  &.normal .hero p.wp-caption-text,
+  &.normal .hero p.wp-media-credit {
+    font-family: @sansFontFamily;
+    line-height: 20px;
+    font-size: @baseFontSize * 0.9375 !important;
+    font-style: normal;
+    color: @graySlightlyLight;
+    margin: 0;
+  }
+  h5.byline {
+    font-size: 16px;
+    .by {
+      font-weight: bold;
+    }
+    span.edit-link {
+	  display: block;
+	  margin-top: 12px;
+    }
+  }
+  
+}
+time {
+  font-weight: normal;
+  color: #aaa;
+  margin: 0 0.8em 0 0.5em;
+}
+
+// Add the "Deep Dive" icon in the top-term position to posts in that tag
+// http://jira.inn.org/browse/VO-12
+body.normal.single-post article.post > header h5.top-tag {
+  position: relative;
+}
+.entry-content h5.top-tag,
+h5.top-tag {
+  margin-bottom: 0;
+  line-height: 2;
+  a {
+    color: #fff;
+    background-color: #555;
+    padding: 5px 8px;
+  }
+}
+.top-term-post_tag-deep-dive .top-tag a {
+  content: '';
+  display: block;
+  background-color: #fff;
+  background-image: url('../img/tag-deep-dive-320x75-indexed.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 256px;
+  padding: 0;
+  color: transparent;
+  text-decoration: none;
+  &:hover {
+    color: transparent;
+    text-decoration: none;
+  }
+}
+
+/*
+ * Copy Largo's sizing rules for body.normal.single-post .entry-content to apply to the hero image on single posts
+ */
+body.normal.single-post .hero {
+  padding: 0 17.021276594%;
+  background-color: #fff;
+}
+@media only screen and (max-width: 979px) {
+  body.normal.single-post .hero {
+    padding: 0 6.38297872%;
+  }
+}
+@media only screen and (max-width: 529px) {
+  body.normal.single-post .hero {
+    padding: 0;
+  }
+}
+/*
+ * Change font size to smaller than largo default
+ * @link http://jira.inn.org/browse/VO-24
+ */
+@media only screen and (max-width: 768px) {
+  h1.entry-title {
+    font-size: 28px;
+  }
+  p {
+    font-size: 17px;
+  }
+  body.normal.single-post article.post > header,
+  body.normal.page article.post > header {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}

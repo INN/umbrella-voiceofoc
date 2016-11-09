@@ -1,0 +1,50 @@
+// How this file is set up: .show-mobile does not display, even in print....
+.show-mobile{
+  display: none;
+}
+
+// except here.
+@media only screen and (max-width: 768px) {
+  .show-mobile{
+    display: block;
+    .homepage-top-stories{
+      article{
+        div.mobile-story{
+          float: left;
+          width: 60%;
+          line-height: 1.25;
+          h1{
+            font-size: 18px!important;
+          }
+          p{
+            font-size: 11px;
+            display: inline;
+            line-height: 1!important;
+          }
+          &.no-image{
+            float: none;
+            width: 100%;
+          }
+        }
+        figure.mobile-photo{
+          float: right!important;
+          width: 33%;
+          margin-top: 21px!important;
+
+          figcaption,
+          .wp-media-credit{
+            display: none!important;
+          }
+        }
+
+        .byline{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .current-time{
+    color: #9D004F;
+  }
+}

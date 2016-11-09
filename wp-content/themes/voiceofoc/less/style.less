@@ -1,0 +1,239 @@
+/*
+ * The basics, imported from Largo
+ * See the Gruntfile.js for how those Largo files get imported
+ */
+@import "variables.less";
+@import "mixins.less";
+
+// Voice of OC custom variables used in the navbar and footer
+@import "vars.less";
+
+// Now change how these Largo files are used
+@import "footer.less";
+
+// And now include these Voice of OC files.
+@import "navbar-voc.less";
+@import "mobile.less";
+@import "single.less";
+@import "widgets.less";
+@import "forms.less";
+@import "page-clean.less";
+
+span.date-published{
+  color: #9D004F;
+
+  .mobile-story &{
+    margin-right: 7px;
+    font-size: 10px;
+
+    span.today{
+      font-size: 11px;
+    }
+  }
+}
+@media(max-width: 768px){
+  div.sticky-footer-holder.show{
+    display: none!important;
+  }
+}
+#site-header {
+  margin: 12px 0 0;
+  text-align: center;
+  @media (max-width: 860px) {
+    text-align: left;
+  }
+  .header_img {
+    max-height: 150px;
+    margin: 0 0 20px;
+  }
+  div.widget {
+    float: left;
+    max-width: 320px;
+    text-align: left;
+    width: 320px;
+    @media (max-width: 860px) {
+      display: none;
+    }
+  }
+  aside {
+    width: 320px;
+  }
+}
+#header-time {
+  border-bottom: 1px solid @grayLighter;
+  padding: 8px 5%;
+  margin-top: 0;
+  font-size: 13px;
+  width: 110%;
+  margin-left: -5%;
+} 
+#header-search {
+  max-width: 300px;
+}
+
+.stories article {
+  border-bottom: 1px solid @grayVoOC;
+  padding-bottom: floor(@baseline / 1.5);
+  margin-bottom: floor(@baseline / 1.7);
+  overflow: hidden; // lightweight clearfix
+}
+
+header.archive-background {
+  .rss-subscribe-link {
+    display: none;
+  }
+}
+
+.voiceofoc-recent-posts {
+  h1.voiceofoc-rp-title {
+    font-family: @serifFontFamily;
+    font-size: @baseFontSize * 0.8;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  article.voiceofoc-recent-post {
+    h1 {
+      font-size: @baseFontSize !important;
+    }
+    figure {
+      float: right;
+      margin-top: 0px;
+      margin-left: 5px;
+      margin-right: 0px;
+    }
+  }
+}
+
+.voiceofoc-headline-media {
+  height: 4em;
+  aside {
+    .vertical-align();
+    p {
+      font-size: @baseFontSize * 0.8;
+      font-family: @sansFontFamily;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3px;
+      img {
+        height: 25px; // Height may be overridden on the page to support different images
+      }
+    }
+  }
+}
+
+.archive .entry-content.with-hero {
+  margin: 0 0 24px;
+  padding: 0;
+  width: 100%;
+}
+
+#supplementary .menu-widgets-footer-1-container > ul.menu  {
+  & > li {
+    margin-bottom: 30px;
+    & > a {
+      display: block;
+      margin-bottom: 8px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #555;
+      width: 100%;
+      color: #FFF;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  li {
+    padding: 0px;
+    border: none;
+    font-size: @baseFontSize * 0.8;
+    font-family: @sansFontFamily;
+    a {
+      color: white;
+    }
+  }
+}
+
+#site-footer {
+  .contact {
+    section {
+      margin-bottom: 20px;
+      p {
+        margin-bottom: 0px;
+        font-size: @baseFontSize * 0.8;
+        font-family: @sansFontFamily;
+      }
+      .voiceofoc-tip a {
+        color: @red;
+      }
+    }
+  }
+}
+
+.related-topics a {
+    color: @black;
+}
+
+.primary-featured-post,
+.secondary-featured-post {
+  .entry-title a {
+    color: @black;
+  }
+}
+.entry-content {
+  .entry-title a {
+    color: @black;
+  }
+  aside.related-top {
+    float: right;
+    clear: right;
+    width: 30%;
+    margin-left: 12px;
+    display: block;
+  }
+  .related {
+    display: none;
+    .border-radius(8px);
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid @grayLighter;
+    h1 {
+      margin-bottom: 8px;
+      font-size: @baseFontSize * 1.1;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+.stories {
+  h2.entry-title {
+    font-size: @baseFontSize * 1.875;
+  }
+}
+
+.sep {
+  display: none;
+}
+
+@media (max-width: 979px) {
+  #main {
+    margin-bottom: 24px;
+  }
+}
+// Responsive .span*
+@media (max-width: 768px) {
+  .voiceofoc-content .span4,
+  body.single-post .span8
+  {
+    border-right: none;
+  }
+  #content {
+    margin-bottom: 24px; 
+  }
+}
+
+@media (max-width: 1170px){
+  #header-search{
+    display: none;
+  }
+}

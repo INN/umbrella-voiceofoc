@@ -1,0 +1,45 @@
+.btn.btn-navbar.toggle-nav-bar {
+  // hack to get it vertically centered.
+  font-size: 20px;
+}
+.navbar li .icon-search {
+  font-size: 20px;
+}
+.toggle-nav-bar .bars .icon-bar {
+  background-color: @ocOrange;
+}
+#main-nav.navbar {
+  border: none;
+}
+.navbar {
+  .navbar-inner {
+    background-color: @ocOrange;
+    color: #fff;
+    font-weight: bold;
+    .nav > li > a {
+      color: #fff;
+    }
+    li.dropdown .dropdown-menu li a:hover {
+      color: #fff;
+    }
+    .caret:before {
+      border-top-color: #fff;
+    }
+    li a:hover {
+      background-color: @ocOrange;
+      .caret:before {
+        border-top-color: #fff;
+      }
+    }
+  }
+}
+nav.navbar div.navbar-inner {
+  text-transform: uppercase;
+}
+.navbar li.home-icon > a img {
+  height: @navbarHeight;
+}
+#header-search button {
+  border: 1px solid rgb(204, 204, 204);
+  background-color: #fff;
+}
