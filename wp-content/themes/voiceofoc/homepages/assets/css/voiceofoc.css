@@ -337,26 +337,6 @@ figure.is-gallery a::after {
   background-color: #222222;
   color: white;
 }
-#homepage-voiceofoc header.color-box.color-box-supporters {
-  background-color: #222222;
-  color: white;
-}
-#homepage-voiceofoc .our-supporters {
-  font-size: 0.1px;
-  text-align: justify;
-}
-#homepage-voiceofoc .our-supporters a {
-  display: inline-block;
-  margin: 3px;
-}
-#homepage-voiceofoc .our-supporters img {
-  height: 60px;
-}
-#homepage-voiceofoc .our-supporters div.textwidget:after {
-  content: '';
-  width: 100%;
-  display: inline-block;
-}
 @media (max-width: 768px) {
   #homepage-voiceofoc .span2,
   #homepage-voiceofoc .span3,

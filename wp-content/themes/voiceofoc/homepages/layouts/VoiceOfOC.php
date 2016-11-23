@@ -587,11 +587,6 @@ function voiceofoc_add_homepage_widget_areas() {
 			'name'	=> __( 'Homepage Right Rail', 'voiceofoc' ),
 			'desc' 	=> __( 'The right rail on the homepage.', 'voiceofoc' ),
 			'id' 	=> 'voiceofoc-homepage-right-rail'
-		),
-		array (
-			'name'	=> __( 'Homepage Our Supporters', 'voiceofoc' ),
-			'desc' 	=> __( 'The supporters section on the homepage.', 'voiceofoc' ),
-			'id' 	=> 'voiceofoc-homepage-supporters'
 		)
 	);
 	

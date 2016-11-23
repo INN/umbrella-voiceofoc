@@ -110,25 +110,6 @@ global $largo, $shown_ids, $tags;
 				</aside>
 			</div>
 		</div>
-		<div class="row-fluid hidden-phone">
-			<header class="span12 color-box color-box-supporters">
-				<h1>Our Supporters</h1>
-			</header>
-		</div>
-		<div class="row-fluid hidden-phone">
-			<aside id="our-supporters" class="our-supporters span12">
-				<?php
-				/*
-				* Widget Area: Homepage Our Supporters
-				*/
-				if ( is_active_sidebar( 'voiceofoc-homepage-supporters' ) ) {
-					dynamic_sidebar( 'voiceofoc-homepage-supporters' );
-				} // is_active_sidebar( 'voiceofoc-homepage-supporters' )
-				else { ?>
-					<article class="no-supporters"><h1>Our Supporters not set</h1><p>Our Supporters are not set. Please contact the editor and web team.</p></article>
-				<?php } // else is_active_sidebar( 'voiceofoc-homepage-supporters' ) ?>
-			</aside>
-		</div>
 	</section>
 	<aside class="span4 voiceofoc-right-rail">
 		<?php
