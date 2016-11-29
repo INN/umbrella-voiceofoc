@@ -694,7 +694,7 @@ span.date-published {
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 16px;
   margin-bottom: 14px;
-  overflow: hidden;
+  clear: both;
 }
 header.archive-background .rss-subscribe-link {
   display: none;
