@@ -181,7 +181,7 @@ class VoiceofOC extends Homepage {
 
 				// Append story to content
 				$content .= sprintf(
-					'<article id="story-%d" class="voiceofoc-sticky %s">%s%s%s%s</article>',
+					'<article id="story-%d" class="voiceofoc-sticky clearfix %s">%s%s%s%s</article>',
 					get_the_ID(),
 					implode( ' ', $sticky_ts_content['classes']),
 					$sticky_ts_content['top-term'],
@@ -270,7 +270,7 @@ class VoiceofOC extends Homepage {
 
 				// Append story to content
 				$content .= sprintf(
-					'<article id="story-%d" class="top-middle %s">%s%s%s</article>',
+					'<article id="story-%d" class="top-middle clearfix %s">%s%s%s</article>',
 					get_the_ID(),
 					implode( ' ', $addl_ts_content['classes']),
 					$addl_ts_content['top-term'],
@@ -368,7 +368,7 @@ class VoiceofOC extends Homepage {
 				$sticky_ts_content['excerpt'] = largo_excerpt( get_post(), 4, FALSE, '', FALSE );
 				// Append story to content
 				$content .= sprintf(
-					'<article id="story-%d" class="voiceofoc-sticky %s"><div class="mobile-story %s">%s%s%s</div>%s</article>',
+					'<article id="story-%d" class="voiceofoc-sticky clearfix %s"><div class="mobile-story %s">%s%s%s</div>%s</article>',
 					get_the_ID(),
 					$hide_mobile,
 					$has_featured_image,
@@ -483,7 +483,7 @@ class VoiceofOC extends Homepage {
 
 				// Append story to content
 				$content .= sprintf(
-					'<article id="story-%d" class="voiceofoc-sticky %s">%s%s%s</article>',
+					'<article id="story-%d" class="voiceofoc-sticky clearfix %s">%s%s%s</article>',
 					get_the_ID(),
 					implode( ' ', $sticky_fs_content['classes'] ),
 					$sticky_fs_content['top-term'],
