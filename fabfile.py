@@ -17,13 +17,6 @@ env.hosts = ['localhost', ]
 env.sftp_deploy = True # needed for wpengine
 env.domain = 'voiceofoc.dev'
 
-"""
-Add HipChat info to send a message to a room when new code has been deployed.
-"""
-env.hipchat_token = ''
-env.hipchat_room_id = ''
-
-
 # Environments
 @task
 def production():
