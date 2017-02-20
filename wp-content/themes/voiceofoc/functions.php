@@ -56,3 +56,16 @@ function voiceofoc_stylesheet() {
 	wp_enqueue_style( 'voiceofoc', get_stylesheet_directory_uri().'/css/style' . $suffix . '.css' );
 }
 add_action( 'wp_enqueue_scripts', 'voiceofoc_stylesheet', 20 );
+
+function voiceofoc_adsbygoogle() {
+	?>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1576598093855162",
+		enable_page_level_ads: true
+		});
+		</script>
+	<?php
+}
+add_action( 'wp_head', 'voiceofoc_adsbygoogle' );
