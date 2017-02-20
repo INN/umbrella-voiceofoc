@@ -347,7 +347,7 @@ footer #boilerplate a:hover {
   border-top-color: #fff;
 }
 .navbar .navbar-inner li a:hover {
-  background-color: #f47820;
+  background-color: #f68121;
 }
 .navbar .navbar-inner li a:hover .caret:before {
   border-top-color: #fff;
@@ -410,7 +410,7 @@ body.normal.single-post article.post > header h1 {
   padding-top: 12px;
 }
 body.single-post .span8 {
-  border-right: 1px solid #e2e2e2;
+  border-right: 1px solid #c9c9c9;
 }
 body.single-post .span4 {
   padding-top: 30px;
@@ -430,7 +430,6 @@ body.single-post.normal .hero p.wp-media-credit {
   line-height: 20px;
   font-size: 15px !important;
   font-style: normal;
-  color: #6e6e6e;
   margin: 0;
 }
 body.single-post h5.byline {
@@ -513,6 +512,13 @@ body.normal.single-post .hero {
     margin-bottom: 12px;
   }
 }
+/*
+ * Comments section
+ */
+#respond,
+.commentlist > li.comment {
+  background: #eaeaea;
+}
 .single-post #sidebar .widget,
 .voiceofoc-right-rail .widget {
   padding: 0px;
@@ -583,7 +589,7 @@ body.normal.single-post .hero {
   padding: 8px 24px;
   margin: 0;
   max-width: 100%;
-  background-color: #2275bb;
+  background-color: #326ca6;
   font-size: 18px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
@@ -732,7 +738,7 @@ span.date-published {
   max-width: 300px;
 }
 .stories article {
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #c9c9c9;
   padding-bottom: 16px;
   margin-bottom: 14px;
   clear: both;
@@ -800,7 +806,7 @@ header.archive-background .rss-subscribe-link {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #site-footer .contact section .voiceofoc-tip a {
-  color: #bd261d;
+  color: #c0333a;
 }
 .related-topics a {
   color: #000000;

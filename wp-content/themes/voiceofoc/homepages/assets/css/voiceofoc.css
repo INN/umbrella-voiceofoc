@@ -134,6 +134,9 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+.alert-wrapper {
+  border: 3px solid #c0333a;
+}
 figure.mobile-photo {
   display: none;
   float: right!important;
@@ -168,7 +171,7 @@ figure.is-gallery a::before {
 }
 figure.is-gallery a::before,
 figure.is-gallery a::after {
-  background-color: black;
+  background-color: #000000;
   color: #ffffff;
   padding: 0.3em 0.7em;
   font-size: 13.04px;
@@ -188,7 +191,7 @@ figure.is-gallery a::after {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 #homepage-voiceofoc > section.span8 {
-  border-right: 1px solid #e2e2e2;
+  border-right: 1px solid #c9c9c9;
   padding-right: 1.06382979%;
 }
 #homepage-voiceofoc > aside.span4 {
@@ -243,7 +246,7 @@ figure.is-gallery a::after {
 }
 #homepage-voiceofoc .homepage-featured {
   margin-left: 0;
-  border-right: 1px solid #e2e2e2;
+  border-right: 1px solid #c9c9c9;
   padding-right: 2.12765957%;
 }
 #homepage-voiceofoc .homepage-featured h1 {
@@ -316,7 +319,7 @@ figure.is-gallery a::after {
 }
 #homepage-voiceofoc article h1 a,
 #homepage-voiceofoc article h2 a {
-  color: black;
+  color: #000000;
 }
 #homepage-voiceofoc article p {
   font-size: 13.04px;
@@ -350,7 +353,7 @@ figure.is-gallery a::after {
   font-weight: normal;
 }
 #homepage-voiceofoc article h5 time.recent {
-  color: #bd261d;
+  color: #c0333a;
 }
 #homepage-voiceofoc .byline a {
   color: #aaaaaa;

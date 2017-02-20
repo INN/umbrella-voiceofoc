@@ -4,6 +4,24 @@
 // From Largo
 @import "mixins.less";
 
+.alert-wrapper {
+  border: 3px solid @red;
+}
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------
+// everything from here on down will disappear with the homepage rebuild
+//
+
 figure.mobile-photo{
   display: none;
   float: right!important;
@@ -36,7 +54,7 @@ figure.is-gallery {
   }
   a::before,
   a::after {
-    background-color: black;
+    background-color: @black;
     color: @white;
     padding: 0.3em 0.7em;
     font-size: @baseFontSize * 0.815;
@@ -61,7 +79,7 @@ figure.is-gallery {
   font-family: @baseFontFamily;
 
   & > section.span8 { // Left region
-    border-right: 1px solid @grayVoOC;
+    border-right: 1px solid @lightgray;
     padding-right: @fluidGridGutterWidth / 2;
   }
 
@@ -124,7 +142,7 @@ figure.is-gallery {
   }
   .homepage-featured  {
     margin-left: 0;
-    border-right: 1px solid @grayVoOC;
+    border-right: 1px solid @lightgray;
     padding-right: @fluidGridGutterWidth;
 
     h1 {
@@ -195,7 +213,7 @@ figure.is-gallery {
       margin-bottom: @baseline / 2;
       line-height: 1.2;
       a {
-        color: black;
+        color: @black;
       }
     }
     p {

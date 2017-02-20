@@ -8,7 +8,7 @@ body.normal.single-post article.post > header h1 {
 }
 body.single-post {
   .span8 {
-    border-right: 1px solid @grayVoOC;
+    border-right: 1px solid @lightgray;
   }
   .span4 {
     padding-top: 30px;
@@ -28,7 +28,6 @@ body.single-post {
     line-height: 20px;
     font-size: @baseFontSize * 0.9375 !important;
     font-style: normal;
-    color: @graySlightlyLight;
     margin: 0;
   }
   h5.byline {
@@ -115,4 +114,12 @@ body.normal.single-post .hero {
     margin-top: 12px;
     margin-bottom: 12px;
   }
+}
+
+/*
+ * Comments section
+ */
+#respond,
+.commentlist>li.comment {
+  background: @lightestgray;
 }
