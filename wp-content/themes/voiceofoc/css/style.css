@@ -684,6 +684,12 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   margin-bottom: -24px;
   margin-top: 10px;
 }
+a {
+  color: #326ca6;
+}
+a:hover {
+  color: #4485c7;
+}
 span.date-published {
   color: #9D004F;
 }
