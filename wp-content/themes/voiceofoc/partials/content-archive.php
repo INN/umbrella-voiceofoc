@@ -40,7 +40,7 @@ if ( $featured ) {
 }
 
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix partials-content-archive'); ?>>
 
 	<?php
 		// Special treatment for posts that are in the Homepage Featured prominence taxonomy term and have thumbnails
