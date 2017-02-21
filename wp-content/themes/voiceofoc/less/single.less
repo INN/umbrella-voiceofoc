@@ -27,15 +27,9 @@ h1.entry-title {
 }
 h5.byline {
   font-family: @sansFontFamily;
+  margin-bottom: 1.5em;
   .by {
     font-weight: bold;
-  }
-  span.edit-link {
-    display: block;
-    margin-top: 12px;
-  }
-  .sep {
-    display: none;
   }
   .time-ago {
     font-family: @serifFontFamily;
@@ -43,6 +37,9 @@ h5.byline {
     color: @red;
     font-size: 16px;
   }
+}
+.byline .author {
+  text-transform: uppercase;
 }
 
 // Add the "Deep Dive" icon in the top-term position to posts in that tag
