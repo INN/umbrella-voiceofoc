@@ -164,7 +164,7 @@ figure.is-gallery a::after {
 }
 figure.is-gallery a::before {
   content: ' Slideshow';
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
   bottom: 0.4em;
   right: 2.2em;
@@ -188,7 +188,7 @@ figure.is-gallery a::after {
   }
 }
 #homepage-voiceofoc {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 }
 #homepage-voiceofoc > section.span8 {
   border-right: 1px solid #c9c9c9;
@@ -312,7 +312,7 @@ figure.is-gallery a::after {
 }
 #homepage-voiceofoc article h1,
 #homepage-voiceofoc article h2 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   margin-bottom: 12px;
   line-height: 1.2;
@@ -334,15 +334,15 @@ figure.is-gallery a::after {
   font-weight: normal;
   color: #aaaaaa;
   text-align: right;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #homepage-voiceofoc article h4 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   margin-bottom: 0;
 }
 #homepage-voiceofoc article h5 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
   font-size: 13.04px;
   margin-bottom: 9px;
 }
@@ -368,7 +368,7 @@ figure.is-gallery a::after {
 #homepage-voiceofoc header.color-box h1 {
   font-weight: 900;
   font-size: 24px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

@@ -255,7 +255,7 @@ ul#footer-social li:last-child a {
 }
 #boilerplate {
   width: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #boilerplate p {
   margin-bottom: 0;
@@ -402,10 +402,6 @@ nav.navbar div.navbar-inner {
     color: #9D004F;
   }
 }
-body.single-post .hero,
-body.page .hero {
-  background-color: #ffffff;
-}
 body.normal.single-post article.post > header h1 {
   padding-top: 12px;
 }
@@ -424,28 +420,29 @@ body.single-post .hero.is-image img {
   margin-bottom: 4px;
   float: left;
 }
-body.single-post.normal .hero p.wp-caption-text,
-body.single-post.normal .hero p.wp-media-credit {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 20px;
-  font-size: 15px !important;
+h1.entry-title {
+  font-family: "futura-pt-bold";
+  font-weight: 700;
   font-style: normal;
-  margin: 0;
 }
-body.single-post h5.byline {
-  font-size: 16px;
+h5.byline {
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-body.single-post h5.byline .by {
+h5.byline .by {
   font-weight: bold;
 }
-body.single-post h5.byline span.edit-link {
+h5.byline span.edit-link {
   display: block;
   margin-top: 12px;
 }
-time {
-  font-weight: normal;
-  color: #aaa;
-  margin: 0 0.8em 0 0.5em;
+h5.byline .sep {
+  display: none;
+}
+h5.byline .time-ago {
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #c0333a;
+  font-size: 16px;
 }
 body.normal.single-post article.post > header h5.top-tag {
   position: relative;
@@ -493,23 +490,6 @@ body.normal.single-post .hero {
 @media only screen and (max-width: 529px) {
   body.normal.single-post .hero {
     padding: 0;
-  }
-}
-/*
- * Change font size to smaller than largo default
- * @link http://jira.inn.org/browse/VO-24
- */
-@media only screen and (max-width: 768px) {
-  h1.entry-title {
-    font-size: 28px;
-  }
-  p {
-    font-size: 17px;
-  }
-  body.normal.single-post article.post > header,
-  body.normal.page article.post > header {
-    margin-top: 12px;
-    margin-bottom: 12px;
   }
 }
 /*
@@ -591,7 +571,7 @@ body.normal.single-post .hero {
   max-width: 100%;
   background-color: #326ca6;
   font-size: 18px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
 }
 .gform_wrapper.donation_form_wrapper ul.gfield_radio li input[type=radio]:checked + label {
@@ -629,14 +609,14 @@ body.normal.single-post .hero {
 }
 .gform_wrapper.donation_form_wrapper .gfield_price_1_20 .gfield_label,
 .gform_wrapper.donation_form_wrapper .gfield_total .gfield_label {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
 }
 .gform_wrapper.donation_form_wrapper .gform_button[type=submit] {
   padding: 12px 36px;
   background-color: #f89406;
   color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: none;
   font-size: 21px;
   font-weight: bold;
@@ -700,11 +680,6 @@ span.date-published {
 .mobile-story span.date-published span.today {
   font-size: 11px;
 }
-@media (max-width: 768px) {
-  div.sticky-footer-holder.show {
-    display: none!important;
-  }
-}
 #site-header {
   margin: 12px 0 0;
   text-align: center;
@@ -732,17 +707,6 @@ span.date-published {
 #site-header aside {
   width: 320px;
 }
-#header-time {
-  border-bottom: 1px solid #dddddd;
-  padding: 8px 5%;
-  margin-top: 0;
-  font-size: 13px;
-  width: 110%;
-  margin-left: -5%;
-}
-#header-search {
-  max-width: 300px;
-}
 .stories article {
   border-bottom: 1px solid #c9c9c9;
   padding-bottom: 16px;
@@ -753,10 +717,11 @@ header.archive-background .rss-subscribe-link {
   display: none;
 }
 .voiceofoc-recent-posts h1.voiceofoc-rp-title {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
   font-size: 12.8px;
   text-transform: uppercase;
   font-weight: 600;
+  font-style: italic;
   margin-bottom: 12px;
 }
 .voiceofoc-recent-posts article.voiceofoc-recent-post h1 {
@@ -780,7 +745,7 @@ header.archive-background .rss-subscribe-link {
 }
 .voiceofoc-headline-media aside p {
   font-size: 12.8px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: center;
   margin-bottom: 3px;
@@ -788,17 +753,12 @@ header.archive-background .rss-subscribe-link {
 .voiceofoc-headline-media aside p img {
   height: 25px;
 }
-.archive .entry-content.with-hero {
-  margin: 0 0 24px;
-  padding: 0;
-  width: 100%;
-}
 #supplementary .widget_nav_menu ul.menu li {
   padding: 0px;
   border: none;
   margin-bottom: 0.5em;
   font-size: 13.6px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #supplementary .widget_nav_menu ul.menu li a {
   color: white;
@@ -809,13 +769,10 @@ header.archive-background .rss-subscribe-link {
 #site-footer .contact section p {
   margin-bottom: 0px;
   font-size: 12.8px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #site-footer .contact section .voiceofoc-tip a {
   color: #c0333a;
-}
-.related-topics a {
-  color: #000000;
 }
 .primary-featured-post .entry-title a,
 .secondary-featured-post .entry-title a {
@@ -845,12 +802,6 @@ header.archive-background .rss-subscribe-link {
   font-size: 17.6px;
   text-transform: uppercase;
   font-weight: bold;
-}
-.stories h2.entry-title {
-  font-size: 30px;
-}
-.sep {
-  display: none;
 }
 @media (max-width: 979px) {
   #main {
