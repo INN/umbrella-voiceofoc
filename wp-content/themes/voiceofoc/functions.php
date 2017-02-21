@@ -29,9 +29,6 @@ foreach ( $includes as $include ) {
 * Register Voice of OC custom image sizes
 */
 function voiceofoc_image_sizes() {
-	// In Case You Missed It section images
-	// 240 pixels wide by 135 pixels tall, hard crop mode
-	add_image_size( 'missed-it', 240, 135, true );
 	// Small Rectangular Thumbnail
 	// Used recent posts widget
 	// 120 pixels wide by 80 pixels tall, hard crop mode
@@ -43,7 +40,6 @@ function voiceofoc_image_sizes() {
 	// Register additional sidebars
 }
 add_action('init', 'voiceofoc_image_sizes', 20);
-
 
 /**
  * Enqueue the stylesheet
@@ -57,6 +53,22 @@ function voiceofoc_stylesheet() {
 }
 add_action( 'wp_enqueue_scripts', 'voiceofoc_stylesheet', 20 );
 
+/**
+ * Typekit fonts
+ */
+function voiceofoc_typekit() {
+	?>
+		<script src="https://use.typekit.net/xyq0vny.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<?php
+}
+add_action( 'wp_head', 'voiceofoc_typekit' );
+
+/**
+ * Added by reques
+ * @since Largo 0.5.5.3
+ * @since February 20, 2017
+ */
 function voiceofoc_adsbygoogle() {
 	?>
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
