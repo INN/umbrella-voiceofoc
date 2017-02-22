@@ -684,6 +684,12 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 .byline + p {
   margin-top: 0.75em;
 }
+.alert-wrapper {
+  border: 3px solid #c0333a;
+}
+#alert-container {
+  padding-top: 0;
+}
 a {
   color: #326ca6;
 }

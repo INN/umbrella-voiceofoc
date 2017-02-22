@@ -17,7 +17,6 @@ $includes = array(
 	'/inc/widgets.php',
 	'/inc/mobile.php',
 	'/inc/misc.php',
-	'/homepages/layouts/VoiceOfOC.php'
 );
 // Perform load
 foreach ( $includes as $include ) {
@@ -33,11 +32,6 @@ function voiceofoc_image_sizes() {
 	// Used recent posts widget
 	// 120 pixels wide by 80 pixels tall, hard crop mode
 	add_image_size( 'small-rect', 120, 80, true );
-	// Medium Rectangular Thumbnail
-	// Used on homepage Top Stories section
-	// 180 pixels wide by 120 pixels tall, hard crop mode
-	add_image_size( 'med-rect', 180, 120, true );
-	// Register additional sidebars
 }
 add_action('init', 'voiceofoc_image_sizes', 20);
 

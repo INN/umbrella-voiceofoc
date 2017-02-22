@@ -1,5 +1,4 @@
 <?php
-	
 /**
  * Add search box to main nav
  * uncomment this and remove partials/nav-main.php when 0.5.5 ships
