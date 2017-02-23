@@ -722,6 +722,10 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   border-bottom: 2px #c9c9c9 solid;
   margin: 0 auto;
 }
+.home #sidebar .widget:last-child::after {
+  display: none;
+  border-bottom: none;
+}
 .home .largo-recent-posts h5 {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
