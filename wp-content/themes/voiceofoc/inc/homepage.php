@@ -32,13 +32,14 @@ function voiceofoc_homepage_tax_query() {
 		array(
 			'taxonomy' => 'category',
 			'field' => 'slug',
-			'terms' => 'communications',
+			'terms' => array( 'communications', 'press-releases' ),
 			'operator' => 'NOT IN',
 		),
+		// for transition planning
 		array(
-			'taxonomy' => 'category',
+			'taxonomy' => 'post_tag',
+			'terms' => array( 'press-releases' ),
 			'field' => 'slug',
-			'terms' => 'press-releases',
 			'operator' => 'NOT IN',
 		)
 	);
