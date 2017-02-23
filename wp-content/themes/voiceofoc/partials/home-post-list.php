@@ -17,27 +17,7 @@ $args = array(
 	'post__not_in' => $shown_ids,
 	'ignore_sticky_posts' => true,
 	// this is the added bit
-	'tax_query' => array(
-		array(
-			'taxonomy' => 'category',
-			'field' => 'slug',
-			'terms' => 'communications',
-			'operator' => 'NOT IN',
-		),
-		array(
-			'taxonomy' => 'category',
-			'field' => 'slug',
-			'terms' => 'press-releases',
-			'operator' => 'NOT IN',
-		),
-		// the following is required for transition planning
-		array(
-			'taxonomy' => 'post_tag',
-			'field' => 'slug',
-			'terms' => 'press-releases',
-			'operator' => 'NOT IN',
-		),
-	)
+	'tax_query' => voiceofoc_homepage_tax_query()
 );
 
 if ( of_get_option( 'num_posts_home' ) ) {

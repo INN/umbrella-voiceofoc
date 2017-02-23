@@ -14,6 +14,7 @@ if ( ! defined( 'INN_HOSTED' ) ) {
  */
 $includes = array(
 	'/inc/sidebars.php',
+	'/inc/homepage.php',
 	'/inc/widgets.php',
 	'/inc/misc.php',
 );
