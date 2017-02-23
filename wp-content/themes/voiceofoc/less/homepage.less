@@ -4,3 +4,87 @@
 #alert-container {
   padding-top: 0;
 }
+
+.home {
+  .entry-content h5.top-tag {
+    display: none;
+  }
+  article div.has-thumbnail {
+    float: left;
+    margin: 0;
+    img {
+      margin: 0 20px 10px 0;
+    }
+  }
+
+  // top post
+  .sticky-solo {
+    h2 {
+      margin-top: 0.5em;
+    }
+  }
+
+  .stories article {
+    border-bottom: none;
+    &::after {
+      display: block;
+      clear: both;
+      border-bottom: 2px @lightgray solid;
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
+
+  #sidebar {
+    border-left: 2px @lightgray solid;
+
+    .widget::after {
+      display: block;
+      clear: both;
+      border-bottom: 2px @lightgray solid;
+      margin: 0 auto;
+    }
+  }
+  .largo-recent-posts h5 {
+    font-family: @serifFontFamily;
+    font-style: italic;
+    font-size: 24px;
+    color: @black;
+    a {
+      color: @black;
+    }
+  }
+  // these should be the same
+  .widgettitle,
+  .largo-recent-posts h5.top-tag a {
+    background: none;
+    padding: 0;
+    font-family: @sansFontFamily;
+    font-style: normal;
+    font-size: 16px;
+    color: @ocOrange;
+    &::after {
+      display: inline;
+      content: ' >>';
+    }
+  }
+  .tribe-mini-calendar-event {
+    border-bottom: none;
+    .entry-title {
+      font-family: @serifFontFamily;
+      font-style: normal;
+      a {
+        color: @black;
+      }
+    }
+    .duration {
+      display: none;
+    }
+  }
+}
+
+.stories {
+  h2.entry-title {
+    font-family: @headlineFontFamily;
+  }
+}

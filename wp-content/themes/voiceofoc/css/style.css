@@ -690,6 +690,80 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 #alert-container {
   padding-top: 0;
 }
+.home .entry-content h5.top-tag {
+  display: none;
+}
+.home article div.has-thumbnail {
+  float: left;
+  margin: 0;
+}
+.home article div.has-thumbnail img {
+  margin: 0 20px 10px 0;
+}
+.home .sticky-solo h2 {
+  margin-top: 0.5em;
+}
+.home .stories article {
+  border-bottom: none;
+}
+.home .stories article::after {
+  display: block;
+  clear: both;
+  border-bottom: 2px #c9c9c9 solid;
+  margin: 0 auto;
+  width: 60%;
+}
+.home #sidebar {
+  border-left: 2px #c9c9c9 solid;
+}
+.home #sidebar .widget::after {
+  display: block;
+  clear: both;
+  border-bottom: 2px #c9c9c9 solid;
+  margin: 0 auto;
+}
+.home .largo-recent-posts h5 {
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #000000;
+}
+.home .largo-recent-posts h5 a {
+  color: #000000;
+}
+.home .widgettitle,
+.home .largo-recent-posts h5.top-tag a {
+  background: none;
+  padding: 0;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  color: #f68121;
+}
+.home .widgettitle::after,
+.home .largo-recent-posts h5.top-tag a::after {
+  display: inline;
+  content: ' >>';
+}
+.home .tribe-mini-calendar-event {
+  border-bottom: none;
+}
+.home .tribe-mini-calendar-event .entry-title {
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+}
+.home .tribe-mini-calendar-event .entry-title a {
+  color: #000000;
+}
+.home .tribe-mini-calendar-event .duration {
+  display: none;
+}
+.stories h2.entry-title {
+  font-family: "futura-pt-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+}
 a {
   color: #326ca6;
 }

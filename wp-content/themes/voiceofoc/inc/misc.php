@@ -28,3 +28,14 @@ function voiceofoc_deep_dive_class( $classes ) {
 	return $classes;
 }
 add_filter( 'post_class', 'voiceofoc_deep_dive_class' );
+
+/**
+ * Ignore homepage-featured formatting in archives and on the homepage
+ * @since Largo 0.5.5.3
+ * @since February 2017
+ */
+function voiceofoc_largo_content_partial_arguments( $args, $context ) {
+	$args['featured'] = false;
+	return $args;
+}
+add_filter( 'largo_content_partial_arguments', 'voiceofoc_largo_content_partial_arguments', 10, 2 );
