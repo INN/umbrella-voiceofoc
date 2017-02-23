@@ -13,9 +13,8 @@ if ( ! defined( 'INN_HOSTED' ) ) {
  * Includes
  */
 $includes = array(
-	'/inc/sidebars.php', 
+	'/inc/sidebars.php',
 	'/inc/widgets.php',
-	'/inc/mobile.php',
 	'/inc/misc.php',
 );
 // Perform load
