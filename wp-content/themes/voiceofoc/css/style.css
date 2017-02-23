@@ -693,6 +693,10 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 .home .entry-content h5.top-tag {
   display: none;
 }
+.home .entry-content h5.byline {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
 .home article div.has-thumbnail {
   float: left;
   margin: 0;
