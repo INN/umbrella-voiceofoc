@@ -753,6 +753,9 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   display: inline;
   content: ' >>';
 }
+.home .widgettitle a {
+  color: #f68121;
+}
 .home .tribe-mini-calendar-event {
   border-bottom: none;
 }
