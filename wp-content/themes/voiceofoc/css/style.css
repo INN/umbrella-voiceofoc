@@ -327,13 +327,16 @@ footer #boilerplate a:hover {
   font-size: 20px;
 }
 .toggle-nav-bar .bars .icon-bar {
-  background-color: #262626;
+  background-color: #000000;
 }
 #main-nav.navbar {
   border: none;
 }
+.navbar {
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .navbar .navbar-inner {
-  background-color: #262626;
+  background-color: #000000;
   color: #fff;
   font-weight: bold;
 }
