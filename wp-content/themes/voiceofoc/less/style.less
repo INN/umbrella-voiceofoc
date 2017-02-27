@@ -70,6 +70,27 @@ span.date-published{
   }
 }
 
+#site-footer {
+  p, li {
+    font-size: 16px;
+  }
+  .contact {
+    section {
+      margin-bottom: 20px;
+      p {
+        margin-bottom: 0px;
+        font-family: @sansFontFamily;
+      }
+      .voiceofoc-tip a {
+        color: @red;
+      }
+      a {
+        color: @white;
+      }
+    }
+  }
+}
+
 .stories article {
   border-bottom: 1px solid @lightgray;
   padding-bottom: floor(@baseline / 1.5);
@@ -127,26 +148,9 @@ header.archive-background {
     padding: 0px;
     border: none;
     margin-bottom: 0.5em;
-    font-size: @baseFontSize * 0.85;
     font-family: @sansFontFamily;
     a {
       color: white;
-    }
-  }
-}
-
-#site-footer {
-  .contact {
-    section {
-      margin-bottom: 20px;
-      p {
-        margin-bottom: 0px;
-        font-size: @baseFontSize * 0.8;
-        font-family: @sansFontFamily;
-      }
-      .voiceofoc-tip a {
-        color: @red;
-      }
     }
   }
 }

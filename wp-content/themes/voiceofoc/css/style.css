@@ -511,6 +511,9 @@ body.normal.single-post .hero {
 .voiceofoc-right-rail h1 > a {
   color: inherit;
 }
+h3.widgettitle {
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
   margin-bottom: 0;
@@ -713,60 +716,59 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 .home .stories article::after {
   display: block;
   clear: both;
-  border-bottom: 2px #c9c9c9 solid;
+  border-bottom: 1px #eaeaea solid;
   margin: 0 auto;
   width: 60%;
 }
 .home #sidebar {
-  border-left: 2px #c9c9c9 solid;
+  border-left: 1px #eaeaea solid;
 }
 .home #sidebar .widget::after {
   display: block;
   clear: both;
-  border-bottom: 2px #c9c9c9 solid;
+  border-bottom: 1px #eaeaea solid;
   margin: 0 auto;
 }
 .home #sidebar .widget:last-child::after {
   display: none;
   border-bottom: none;
 }
-.home .largo-recent-posts h5 {
+.home #sidebar .largo-recent-posts h5 {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 24px;
   color: #000000;
 }
-.home .largo-recent-posts h5 a {
+.home #sidebar .largo-recent-posts h5 a {
   color: #000000;
 }
-.home .widgettitle,
-.home .largo-recent-posts h5.top-tag a {
+.home #sidebar .widgettitle,
+.home #sidebar .largo-recent-posts h5.top-tag a {
   background: none;
   padding: 0;
-  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-size: 16px;
   color: #f68121;
 }
-.home .widgettitle::after,
-.home .largo-recent-posts h5.top-tag a::after {
+.home #sidebar .widgettitle::after,
+.home #sidebar .largo-recent-posts h5.top-tag a::after {
   display: inline;
   content: ' >>';
 }
-.home .widgettitle a {
+.home #sidebar .widgettitle a {
   color: #f68121;
 }
-.home .tribe-mini-calendar-event {
+.home #sidebar .tribe-mini-calendar-event {
   border-bottom: none;
 }
-.home .tribe-mini-calendar-event .entry-title {
+.home #sidebar .tribe-mini-calendar-event .entry-title {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
   font-style: normal;
 }
-.home .tribe-mini-calendar-event .entry-title a {
+.home #sidebar .tribe-mini-calendar-event .entry-title a {
   color: #000000;
 }
-.home .tribe-mini-calendar-event .duration {
+.home #sidebar .tribe-mini-calendar-event .duration {
   display: none;
 }
 .stories h2.entry-title {
@@ -821,6 +823,23 @@ span.date-published {
 #site-header aside {
   width: 320px;
 }
+#site-footer p,
+#site-footer li {
+  font-size: 16px;
+}
+#site-footer .contact section {
+  margin-bottom: 20px;
+}
+#site-footer .contact section p {
+  margin-bottom: 0px;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#site-footer .contact section .voiceofoc-tip a {
+  color: #c0333a;
+}
+#site-footer .contact section a {
+  color: #ffffff;
+}
 .stories article {
   border-bottom: 1px solid #c9c9c9;
   padding-bottom: 16px;
@@ -871,22 +890,10 @@ header.archive-background .rss-subscribe-link {
   padding: 0px;
   border: none;
   margin-bottom: 0.5em;
-  font-size: 13.6px;
   font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #supplementary .widget_nav_menu ul.menu li a {
   color: white;
-}
-#site-footer .contact section {
-  margin-bottom: 20px;
-}
-#site-footer .contact section p {
-  margin-bottom: 0px;
-  font-size: 12.8px;
-  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-#site-footer .contact section .voiceofoc-tip a {
-  color: #c0333a;
 }
 .primary-featured-post .entry-title a,
 .secondary-featured-post .entry-title a {
