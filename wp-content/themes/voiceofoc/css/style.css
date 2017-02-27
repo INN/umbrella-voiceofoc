@@ -430,6 +430,9 @@ body.single-post .hero.is-image img {
   margin-bottom: 4px;
   float: left;
 }
+body.single-post .hero.is-image.span12 {
+  margin-left: 0;
+}
 h1.entry-title {
   font-family: "futura-pt-bold";
   font-weight: 700;
@@ -491,6 +494,10 @@ h5.top-tag a {
 body.normal.single-post .hero {
   padding: 0 17.021276594%;
   background-color: #fff;
+}
+body.normal.single-post .hero p.wp-caption-text,
+body.normal.single-post .hero p.wp-media-credit {
+  margin: 0 0 12px;
 }
 @media only screen and (max-width: 979px) {
   body.normal.single-post .hero {

@@ -18,6 +18,9 @@ body.single-post {
     margin-bottom: 4px;
     float: left;
   }
+  .hero.is-image.span12 {
+    margin-left: 0;
+  }
 
 }
 h1.entry-title {
@@ -84,6 +87,12 @@ h5.top-tag {
 body.normal.single-post .hero {
   padding: 0 17.021276594%;
   background-color: #fff;
+
+  // but do force the caption to be narrower than the image
+  p.wp-caption-text,
+  p.wp-media-credit {
+    margin: 0 0 12px;
+  }
 }
 @media only screen and (max-width: 979px) {
   body.normal.single-post .hero {
