@@ -786,6 +786,7 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 }
 body {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+  color: #000000;
 }
 a {
   color: #326ca6;
@@ -802,6 +803,9 @@ span.date-published {
 }
 .mobile-story span.date-published span.today {
   font-size: 11px;
+}
+.byline a {
+  color: #000000;
 }
 .byline .sep {
   display: none;

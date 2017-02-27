@@ -23,6 +23,7 @@
 
 body {
   font-family: @baseFontFamily;
+  color: @black;
 }
 a {
   color: @blue;
@@ -43,8 +44,13 @@ span.date-published{
     }
   }
 }
-.byline .sep {
-  display: none;
+.byline {
+  a {
+    color: @black;
+  }
+  .sep {
+    display: none;
+  }
 }
 #site-header {
   margin: 12px 0 0;
