@@ -3,7 +3,7 @@
     font-family: @headlineFontFamily;
   }
   .related-topics {
-    font-family: @sansFontFamily;
+    font-family: @headlineFontFamily;
   }
 }
 .partials-content-archive .entry-content {
@@ -32,4 +32,35 @@
 
 .byline + p {
   margin-top: 0.75em;
+}
+
+.stories article {
+  padding-bottom: floor(@baseline / 1.5);
+  margin-bottom: floor(@baseline / 1.7);
+  clear: both;
+  border-bottom: none;
+
+  &::after {
+    display: block;
+    clear: both;
+    border-bottom: @homeRule;
+    margin: 0 auto;
+    width: 60%;
+  }
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.pager .load-more {
+  display: block;
+  width: 100%;
+  a {
+    text-transform: uppercase;
+    display: block;
+    background-color: @black;
+    color: @white;
+    font-family: @sansFontFamily;
+    font-size: 1.5em;
+  }
 }

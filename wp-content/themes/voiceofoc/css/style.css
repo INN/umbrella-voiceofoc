@@ -333,7 +333,7 @@ footer #boilerplate a:hover {
   border: none;
 }
 .navbar {
-  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar .navbar-inner {
   background-color: #000000;
@@ -366,7 +366,7 @@ nav.navbar div.navbar-inner {
   background-color: #fff;
 }
 #topics-bar ul {
-  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #topics-bar ul li,
 #topics-bar ul li.menu-label {
@@ -732,7 +732,7 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   font-family: "futura-pt-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .archive-background .related-topics {
-  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "futura-pt-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .partials-content-archive .entry-content h5.byline,
 .partials-content-archive .entry-content h5.top-tag {
@@ -753,6 +753,34 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 }
 .byline + p {
   margin-top: 0.75em;
+}
+.stories article {
+  padding-bottom: 16px;
+  margin-bottom: 14px;
+  clear: both;
+  border-bottom: none;
+}
+.stories article::after {
+  display: block;
+  clear: both;
+  border-bottom: 1px #eaeaea solid;
+  margin: 0 auto;
+  width: 60%;
+}
+.stories article:last-child::after {
+  display: none;
+}
+.pager .load-more {
+  display: block;
+  width: 100%;
+}
+.pager .load-more a {
+  text-transform: uppercase;
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
 }
 .alert-wrapper {
   border: 3px solid #c0333a;
@@ -776,16 +804,6 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 }
 .home .sticky-solo h2 {
   margin-top: 0.5em;
-}
-.home .stories article {
-  border-bottom: none;
-}
-.home .stories article::after {
-  display: block;
-  clear: both;
-  border-bottom: 1px #eaeaea solid;
-  margin: 0 auto;
-  width: 60%;
 }
 .stories h2.entry-title {
   font-family: "futura-pt-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -859,12 +877,6 @@ span.date-published {
 }
 #site-footer .contact section a {
   color: #ffffff;
-}
-.stories article {
-  border-bottom: 1px solid #c9c9c9;
-  padding-bottom: 16px;
-  margin-bottom: 14px;
-  clear: both;
 }
 header.archive-background .rss-subscribe-link {
   display: none;
