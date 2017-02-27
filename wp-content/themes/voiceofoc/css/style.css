@@ -365,6 +365,13 @@ nav.navbar div.navbar-inner {
   border: 1px solid #cccccc;
   background-color: #fff;
 }
+#topics-bar ul {
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#topics-bar ul li,
+#topics-bar ul li.menu-label {
+  font-size: 16px;
+}
 .show-mobile {
   display: none;
 }
