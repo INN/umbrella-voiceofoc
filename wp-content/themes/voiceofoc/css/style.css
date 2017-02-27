@@ -767,7 +767,7 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   margin: 0 auto;
   width: 60%;
 }
-.stories article:last-child::after {
+.stories article:last-of-type::after {
   display: none;
 }
 .pager .load-more {
