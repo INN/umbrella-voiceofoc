@@ -6,8 +6,6 @@
 }
 
 .home {
-  @homeRule: 1px @lightestgray solid;
-
   .entry-content h5.top-tag {
     display: none;
   }
@@ -38,59 +36,6 @@
       border-bottom: @homeRule;
       margin: 0 auto;
       width: 60%;
-    }
-  }
-
-  #sidebar {
-    border-left: @homeRule;
-
-    .widget::after {
-      display: block;
-      clear: both;
-      border-bottom: @homeRule;
-      margin: 0 auto;
-    }
-    .widget:last-child::after {
-      display: none;
-      border-bottom: none;
-    }
-    .largo-recent-posts h5 {
-      font-family: @serifFontFamily;
-      font-style: italic;
-      font-size: 24px;
-      color: @black;
-      a {
-        color: @black;
-      }
-    }
-    // these should be the same
-    .widgettitle,
-    .largo-recent-posts h5.top-tag a {
-      background: none;
-      padding: 0;
-      font-style: normal;
-      font-size: 16px;
-      color: @ocOrange;
-      &::after {
-        display: inline;
-        content: ' >>';
-      }
-    }
-    .widgettitle a {
-      color: @ocOrange;
-    }
-    .tribe-mini-calendar-event {
-      border-bottom: none;
-      .entry-title {
-        font-family: @serifFontFamily;
-        font-style: normal;
-        a {
-          color: @black;
-        }
-      }
-      .duration {
-        display: none;
-      }
     }
   }
 }

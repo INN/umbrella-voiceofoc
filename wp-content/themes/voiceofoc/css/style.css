@@ -461,7 +461,7 @@ h5.top-tag {
 .entry-content h5.top-tag a,
 h5.top-tag a {
   color: #000000;
-  background-color: #c9c9c9;
+  background-color: #eaeaea;
   font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 5px 8px;
 }
@@ -509,6 +509,9 @@ body.normal.single-post .hero {
 .commentlist > li.comment {
   background: #eaeaea;
 }
+h3.widgettitle {
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .single-post #sidebar .widget,
 .voiceofoc-right-rail .widget {
   padding: 0px;
@@ -521,8 +524,56 @@ body.normal.single-post .hero {
 .voiceofoc-right-rail h1 > a {
   color: inherit;
 }
-h3.widgettitle {
-  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+#sidebar {
+  border-left: 1px #eaeaea solid;
+}
+#sidebar .widget::after {
+  display: block;
+  clear: both;
+  border-bottom: 1px #eaeaea solid;
+  margin: 0 auto;
+}
+#sidebar .widget:last-child::after {
+  display: none;
+  border-bottom: none;
+}
+#sidebar .largo-recent-posts h5 {
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #000000;
+}
+#sidebar .largo-recent-posts h5 a {
+  color: #000000;
+}
+#sidebar .widgettitle,
+#sidebar .largo-recent-posts h5.top-tag a {
+  background: none;
+  padding: 0;
+  font-style: normal;
+  font-size: 16px;
+  color: #f68121;
+}
+#sidebar .widgettitle::after,
+#sidebar .largo-recent-posts h5.top-tag a::after {
+  display: inline;
+  content: ' >>';
+}
+#sidebar .widgettitle a {
+  color: #f68121;
+}
+#sidebar .tribe-mini-calendar-event {
+  border-bottom: none;
+}
+#sidebar .tribe-mini-calendar-event .entry-title {
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+}
+#sidebar .tribe-mini-calendar-event .entry-title a {
+  color: #000000;
+}
+#sidebar .tribe-mini-calendar-event .duration {
+  display: none;
 }
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
@@ -677,6 +728,12 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   margin-bottom: -24px;
   margin-top: 10px;
 }
+.archive-background h1 {
+  font-family: "futura-pt-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.archive-background .related-topics {
+  font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .partials-content-archive .entry-content h5.byline,
 .partials-content-archive .entry-content h5.top-tag {
   display: inline;
@@ -729,57 +786,6 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   border-bottom: 1px #eaeaea solid;
   margin: 0 auto;
   width: 60%;
-}
-.home #sidebar {
-  border-left: 1px #eaeaea solid;
-}
-.home #sidebar .widget::after {
-  display: block;
-  clear: both;
-  border-bottom: 1px #eaeaea solid;
-  margin: 0 auto;
-}
-.home #sidebar .widget:last-child::after {
-  display: none;
-  border-bottom: none;
-}
-.home #sidebar .largo-recent-posts h5 {
-  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-size: 24px;
-  color: #000000;
-}
-.home #sidebar .largo-recent-posts h5 a {
-  color: #000000;
-}
-.home #sidebar .widgettitle,
-.home #sidebar .largo-recent-posts h5.top-tag a {
-  background: none;
-  padding: 0;
-  font-style: normal;
-  font-size: 16px;
-  color: #f68121;
-}
-.home #sidebar .widgettitle::after,
-.home #sidebar .largo-recent-posts h5.top-tag a::after {
-  display: inline;
-  content: ' >>';
-}
-.home #sidebar .widgettitle a {
-  color: #f68121;
-}
-.home #sidebar .tribe-mini-calendar-event {
-  border-bottom: none;
-}
-.home #sidebar .tribe-mini-calendar-event .entry-title {
-  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
-  font-style: normal;
-}
-.home #sidebar .tribe-mini-calendar-event .entry-title a {
-  color: #000000;
-}
-.home #sidebar .tribe-mini-calendar-event .duration {
-  display: none;
 }
 .stories h2.entry-title {
   font-family: "futura-pt-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
