@@ -33,7 +33,7 @@ if ( $query->have_posts() ) {
 
 				<?php // if we have a thumbnail image, show it
 				if ( has_post_thumbnail() ) { ?>
-					<div class="image-wrap hidden-phone <?php largo_hero_class(get_the_ID()); ?>">
+					<div class="image-wrap <?php largo_hero_class(get_the_ID()); ?>">
 						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
 					</div>
 				<?php } // end thumbnail ?>
