@@ -349,10 +349,21 @@ footer #boilerplate a:hover {
 .navbar .navbar-inner .caret:before {
   border-top-color: #fff;
 }
-.navbar .navbar-inner li a:hover {
+.navbar li > a:hover,
+.navbar li a:hover {
   background-color: #f68121;
+  color: #ffffff;
 }
-.navbar .navbar-inner li a:hover .caret:before {
+.navbar li > a:hover .caret:before,
+.navbar li a:hover .caret:before {
+  border-top-color: #fff;
+}
+.navbar.sticky-navbar li.dropdown .dropdown-menu li a:hover,
+.navbar.sticky-navbar li a:hover {
+  color: #ffffff;
+}
+.navbar.sticky-navbar li.dropdown .dropdown-menu li a:hover .caret:before,
+.navbar.sticky-navbar li a:hover .caret:before {
   border-top-color: #fff;
 }
 nav.navbar div.navbar-inner {

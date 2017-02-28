@@ -27,14 +27,25 @@
     .caret:before {
       border-top-color: #fff;
     }
-    li a:hover {
-      background-color: @ocOrange;
-      .caret:before {
-        border-top-color: #fff;
-      }
+  }
+  li > a:hover,
+  li a:hover {
+    background-color: @ocOrange;
+    color: @white;
+    .caret:before {
+      border-top-color: #fff;
     }
   }
 }
+.navbar.sticky-navbar li.dropdown .dropdown-menu li  a:hover,
+.navbar.sticky-navbar li a:hover {
+  color: @white;
+  .caret:before {
+    border-top-color: #fff;
+  }
+}
+
+
 nav.navbar div.navbar-inner {
   text-transform: uppercase;
 }
