@@ -527,6 +527,7 @@ body.normal.single-post .hero p.wp-media-credit {
 .commentlist > li.comment {
   background: #eaeaea;
 }
+h2.widgettitle,
 h3.widgettitle {
   font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
 }
