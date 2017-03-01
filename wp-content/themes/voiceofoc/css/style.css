@@ -790,6 +790,17 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 .stories article:last-of-type::after {
   display: none;
 }
+.stories article div.has-thumbnail {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+.stories article div.has-thumbnail img {
+  float: none;
+}
+.stories article div.has-thumbnail.is-empty {
+  margin: 0;
+  display: none;
+}
 .pager .load-more {
   display: block;
   width: 100%;
@@ -814,13 +825,6 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 .home .entry-content h5.byline {
   font-size: 16px;
   margin-bottom: 8px;
-}
-.home article div.has-thumbnail {
-  float: left;
-  margin: 0 20px 10px 0;
-}
-.home article div.has-thumbnail img {
-  float: none;
 }
 .home .sticky-solo h2 {
   margin-top: 0.5em;

@@ -34,21 +34,36 @@
   margin-top: 0.75em;
 }
 
-.stories article {
-  padding-bottom: floor(@baseline / 1.5);
-  margin-bottom: floor(@baseline / 1.7);
-  clear: both;
-  border-bottom: none;
-
-  &::after {
-    display: block;
+.stories {
+  article {
+    padding-bottom: floor(@baseline / 1.5);
+    margin-bottom: floor(@baseline / 1.7);
     clear: both;
-    border-bottom: @homeRule;
-    margin: 0 auto;
-    width: 60%;
-  }
-  &:last-of-type::after {
-    display: none;
+    border-bottom: none;
+
+    &::after {
+      display: block;
+      clear: both;
+      border-bottom: @homeRule;
+      margin: 0 auto;
+      width: 60%;
+    }
+    &:last-of-type::after {
+      display: none;
+    }
+
+    // left-align the thumbnails
+    div.has-thumbnail {
+      float: left;
+      margin: 0 20px 10px 0;
+      img {
+        float: none;
+      }
+      &.is-empty {
+        margin: 0;
+        display: none;
+      }
+    }
   }
 }
 
