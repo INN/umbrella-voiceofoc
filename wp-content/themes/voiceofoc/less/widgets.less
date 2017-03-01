@@ -16,13 +16,15 @@ h3.widgettitle {
 }
 
 #sidebar {
-  border-left: @homeRule;
+  @media ( min-width: 769px ) {
+    border-left: @homeRule;
+  }
 
   .widget::after {
     display: block;
     clear: both;
     border-bottom: @homeRule;
-    margin: 0 auto;
+    margin: 24px auto 0;
   }
   .widget:last-child::after {
     display: none;

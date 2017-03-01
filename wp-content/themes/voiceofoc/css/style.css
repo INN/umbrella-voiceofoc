@@ -542,14 +542,16 @@ h3.widgettitle {
 .voiceofoc-right-rail h1 > a {
   color: inherit;
 }
-#sidebar {
-  border-left: 1px #eaeaea solid;
+@media (min-width: 769px) {
+  #sidebar {
+    border-left: 1px #eaeaea solid;
+  }
 }
 #sidebar .widget::after {
   display: block;
   clear: both;
   border-bottom: 1px #eaeaea solid;
-  margin: 0 auto;
+  margin: 24px auto 0;
 }
 #sidebar .widget:last-child::after {
   display: none;
@@ -852,32 +854,8 @@ span.date-published {
 .byline .sep {
   display: none;
 }
-#site-header {
-  margin: 12px 0 0;
-  text-align: center;
-}
-@media (max-width: 860px) {
-  #site-header {
-    text-align: left;
-  }
-}
 #site-header .header_img {
   max-height: 150px;
-  margin: 0 0 20px;
-}
-#site-header div.widget {
-  float: left;
-  max-width: 320px;
-  text-align: left;
-  width: 320px;
-}
-@media (max-width: 860px) {
-  #site-header div.widget {
-    display: none;
-  }
-}
-#site-header aside {
-  width: 320px;
 }
 #site-footer p,
 #site-footer li {
