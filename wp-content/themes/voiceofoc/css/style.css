@@ -815,10 +815,10 @@ body.normal.page-template-page-clean article.page > header.entry-header {
 }
 .home article div.has-thumbnail {
   float: left;
-  margin: 0;
+  margin: 0 20px 10px 0;
 }
 .home article div.has-thumbnail img {
-  margin: 0 20px 10px 0;
+  float: none;
 }
 .home .sticky-solo h2 {
   margin-top: 0.5em;
