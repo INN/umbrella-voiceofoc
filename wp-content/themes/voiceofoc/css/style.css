@@ -255,7 +255,7 @@ ul#footer-social li:last-child a {
 }
 #boilerplate {
   width: 100%;
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
 }
 #boilerplate p {
   margin-bottom: 0;
@@ -333,7 +333,7 @@ footer #boilerplate a:hover {
   border: none;
 }
 .navbar {
-  font-family: "futura-pt-bold", "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
 .navbar .navbar-inner {
   background-color: #000000;
@@ -377,7 +377,7 @@ nav.navbar div.navbar-inner {
   background-color: #fff;
 }
 #topics-bar ul {
-  font-family: "futura-pt-bold", "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
 #topics-bar ul li,
 #topics-bar ul li.menu-label {
@@ -450,7 +450,7 @@ h1.entry-title {
   font-style: normal;
 }
 h5.byline {
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
   margin-bottom: 1.5em;
 }
 h5.byline .by {
@@ -476,7 +476,7 @@ h5.top-tag {
 h5.top-tag a {
   color: #000000;
   background-color: #eaeaea;
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
   padding: 5px 8px;
 }
 .top-term-post_tag-deep-dive .top-tag {
@@ -529,7 +529,7 @@ body.normal.single-post .hero p.wp-media-credit {
 }
 h2.widgettitle,
 h3.widgettitle {
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
 }
 .single-post #sidebar .widget,
 .voiceofoc-right-rail .widget {
@@ -656,7 +656,7 @@ h3.widgettitle {
   max-width: 100%;
   background-color: #326ca6;
   font-size: 18px;
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
   color: #fff;
 }
 .gform_wrapper.donation_form_wrapper ul.gfield_radio li input[type=radio]:checked + label {
@@ -694,14 +694,14 @@ h3.widgettitle {
 }
 .gform_wrapper.donation_form_wrapper .gfield_price_1_20 .gfield_label,
 .gform_wrapper.donation_form_wrapper .gfield_total .gfield_label {
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
   font-size: 24px;
 }
 .gform_wrapper.donation_form_wrapper .gform_button[type=submit] {
   padding: 12px 36px;
   background-color: #f89406;
   color: #fff;
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
   border: none;
   font-size: 21px;
   font-weight: bold;
@@ -750,13 +750,13 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   margin-top: 10px;
 }
 .archive-background h1 {
-  font-family: "futura-pt-bold", "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
 .archive-background .related-topics {
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
 }
 .archive-background .related-topics strong {
-  font-family: "futura-pt-bold", "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
 .partials-content-archive .entry-content h5.byline,
 .partials-content-archive .entry-content h5.top-tag {
@@ -814,7 +814,7 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   display: block;
   background-color: #000000;
   color: #ffffff;
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
   font-size: 1.5em;
 }
 .alert-wrapper {
@@ -834,7 +834,7 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   margin-top: 0.5em;
 }
 .stories h2.entry-title {
-  font-family: "futura-pt-bold", "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
 body {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
@@ -933,7 +933,7 @@ header.archive-background .rss-subscribe-link {
 }
 .voiceofoc-headline-media aside p {
   font-size: 12.8px;
-  font-family: "futura-pt-condensed", "Futura Condensed ExtraBold", Impact, sans-serif;
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
   font-weight: bold;
   text-align: center;
   margin-bottom: 3px;
