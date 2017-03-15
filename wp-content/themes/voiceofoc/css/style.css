@@ -601,6 +601,57 @@ h3.widgettitle {
 #sidebar .tribe-mini-calendar-event .duration {
   display: none;
 }
+.tags {
+  overflow: visible;
+  line-height: 1.9;
+}
+.tags h5 {
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
+  color: #f68121;
+  margin-right: 0;
+}
+.tags h5,
+.tags a {
+  font-size: 24px;
+}
+.tags ul {
+  margin-bottom: 24px;
+}
+.tags ul li {
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+}
+.tags ul li::after {
+  content: ", ";
+}
+.tags ul li a {
+  text-transform: none;
+  color: #000000;
+}
+.article-bottom .widget {
+  border-bottom: 1px #eaeaea solid;
+}
+.article-bottom .widget:first-child {
+  border-top: 1px #eaeaea solid;
+  padding-top: 24px;
+}
+.article-bottom .largo-recent-posts .widgettitle {
+  color: #f68121;
+  font-size: 24px;
+}
+.article-bottom .largo-recent-posts ul {
+  list-style: disc;
+}
+.article-bottom .largo-recent-posts ul li {
+  overflow: visible;
+  margin-left: 1.5em;
+}
+.article-bottom .largo-recent-posts ul li h5 {
+  display: inline;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+}
+.article-bottom .largo-recent-posts ul li h5 a {
+  color: #000000;
+}
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
   margin-bottom: 0;

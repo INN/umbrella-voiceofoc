@@ -70,3 +70,62 @@ h3.widgettitle {
     }
   }
 }
+
+.tags {
+  overflow: visible;
+  line-height: 1.9;
+  h5 {
+    font-family: @sansFontFamily;
+    color: @ocOrange;
+    margin-right: 0;
+  }
+  h5, a {
+    font-size: @baseline;
+  }
+  ul {
+    margin-bottom: 24px;
+
+    li {
+      font-family: @serifFontFamily;
+      &::after {
+        content: ", ";
+      }
+
+      a {
+        text-transform: none;
+          color: @black;
+      }
+    }
+  }
+}
+.article-bottom {
+  .widget {
+    border-bottom: @homeRule;
+
+    &:first-child {
+      border-top: @homeRule;
+      padding-top: 24px;
+    }
+  }
+
+  .largo-recent-posts {
+    .widgettitle {
+      color: @ocOrange;
+      font-size: @baseline;
+    }
+    ul {
+      list-style: disc;
+      li {
+        overflow: visible;
+        margin-left: 1.5em;
+        h5 {
+          display: inline;
+          font-family: @serifFontFamily;
+          a {
+            color: @black;
+          }
+        }
+      }
+    }
+  }
+}
