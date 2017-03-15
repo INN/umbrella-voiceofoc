@@ -627,16 +627,16 @@ h3.widgettitle {
   text-transform: none;
   color: #000000;
 }
+.article-bottom .widgettitle {
+  color: #f68121;
+  font-size: 24px;
+}
 .article-bottom .widget {
   border-bottom: 1px #eaeaea solid;
 }
 .article-bottom .widget:first-child {
   border-top: 1px #eaeaea solid;
   padding-top: 24px;
-}
-.article-bottom .largo-recent-posts .widgettitle {
-  color: #f68121;
-  font-size: 24px;
 }
 .article-bottom .largo-recent-posts ul {
   list-style: disc;
