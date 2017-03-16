@@ -80,7 +80,7 @@ h3.widgettitle {
     margin-right: 0;
   }
   h5, a {
-    font-size: @baseline;
+    font-size: @baseFontSize * 1.222;
   }
   ul {
     margin-bottom: 24px;
@@ -110,6 +110,11 @@ h3.widgettitle {
       border-top: @homeRule;
       padding-top: 24px;
     }
+
+    // by request, make these widgets match the font size of body text
+    p {
+      font-size: @baseFontSize * 1.222;
+    }
   }
 
   .largo-recent-posts {
@@ -129,9 +134,12 @@ h3.widgettitle {
     }
   }
   .largo-related-posts {
+    img {
+      display: none;
+    }
     .widgettitle {
       text-align: left;
-      font-size: @baseline;
+      font-size: @baseFontSize * 1.222;
     }
     h4 {
       display: inline;

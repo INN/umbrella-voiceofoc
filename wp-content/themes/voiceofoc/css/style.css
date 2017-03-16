@@ -381,12 +381,15 @@ nav.navbar div.navbar-inner {
   border: 1px solid #cccccc;
   background-color: #fff;
 }
-#topics-bar ul {
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+#secondary-nav ul {
+  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
 }
-#topics-bar ul li,
-#topics-bar ul li.menu-label {
+#secondary-nav ul li,
+#secondary-nav ul li.menu-label {
   font-size: 16px;
+}
+#secondary-nav ul li.menu-item {
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 }
 .show-mobile {
   display: none;
@@ -612,7 +615,7 @@ h3.widgettitle {
 }
 .tags h5,
 .tags a {
-  font-size: 24px;
+  font-size: 19.552px;
 }
 .tags ul {
   margin-bottom: 24px;
@@ -638,6 +641,9 @@ h3.widgettitle {
   border-top: 1px #eaeaea solid;
   padding-top: 24px;
 }
+.article-bottom .widget p {
+  font-size: 19.552px;
+}
 .article-bottom .largo-recent-posts ul {
   list-style: disc;
 }
@@ -652,9 +658,12 @@ h3.widgettitle {
 .article-bottom .largo-recent-posts ul li h5 a {
   color: #000000;
 }
+.article-bottom .largo-related-posts img {
+  display: none;
+}
 .article-bottom .largo-related-posts .widgettitle {
   text-align: left;
-  font-size: 24px;
+  font-size: 19.552px;
 }
 .article-bottom .largo-related-posts h4 {
   display: inline;
@@ -939,7 +948,7 @@ span.date-published {
 #site-footer li {
   font-size: 16px;
   margin-bottom: 0;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 }
 #site-footer .contact section {
   margin-bottom: 20px;
@@ -957,7 +966,7 @@ span.date-published {
   border: 1px #dddddd solid;
   padding: 4px 6px;
   line-height: 19px;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 }
 #supplementary .widget_nav_menu ul.menu li {
   padding: 0px;
