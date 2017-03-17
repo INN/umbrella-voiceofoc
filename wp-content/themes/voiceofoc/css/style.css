@@ -382,7 +382,7 @@ nav.navbar div.navbar-inner {
   background-color: #fff;
 }
 #secondary-nav ul {
-  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
 #secondary-nav ul li,
 #secondary-nav ul li.menu-label {
@@ -582,11 +582,6 @@ h3.widgettitle {
   font-style: normal;
   font-size: 16px;
   color: #f68121;
-}
-#sidebar .widgettitle::after,
-#sidebar .largo-recent-posts h5.top-tag a::after {
-  display: inline;
-  content: ' >>';
 }
 #sidebar .widgettitle a {
   color: #f68121;
@@ -829,9 +824,10 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
 .archive-background .related-topics {
-  font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
+  font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 }
 .archive-background .related-topics strong {
+  text-transform: uppercase;
   font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
 .partials-content-archive .entry-content h5.byline,
