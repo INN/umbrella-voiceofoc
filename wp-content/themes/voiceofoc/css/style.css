@@ -377,9 +377,18 @@ nav.navbar div.navbar-inner {
 .navbar li.home-icon > a img {
   height: 40px;
 }
+.navbar-inner #header-search {
+  float: right;
+  margin: 6px 6px 0 0;
+}
 #header-search button {
   border: 1px solid #cccccc;
   background-color: #fff;
+}
+@media (max-width: 1170px) {
+  #header-search {
+    display: none;
+  }
 }
 #secondary-nav ul {
   font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
@@ -1054,10 +1063,5 @@ header.archive-background .rss-subscribe-link {
   }
   #content {
     margin-bottom: 24px;
-  }
-}
-@media (max-width: 1170px) {
-  #header-search {
-    display: none;
   }
 }

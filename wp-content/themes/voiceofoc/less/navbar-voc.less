@@ -57,9 +57,18 @@ nav.navbar div.navbar-inner {
 .navbar li.home-icon > a img {
   height: @navbarHeight;
 }
-#header-search button {
-  border: 1px solid rgb(204, 204, 204);
-  background-color: #fff;
+#header-search {
+  .navbar-inner & {
+    float: right;
+    margin: 6px 6px 0 0;
+  }
+  button {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: #fff;
+  }
+  @media (max-width: 1170px){
+    display: none;
+  }
 }
 
 #secondary-nav ul {
