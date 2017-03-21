@@ -943,6 +943,9 @@ span.date-published {
 .byline .sep {
   display: none;
 }
+#site-header {
+  text-align: center;
+}
 #site-header .header_img {
   max-height: 150px;
 }
