@@ -933,6 +933,9 @@ h2,
 h3 {
   font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
+blockquote {
+  border-left-color: #f68121;
+}
 span.date-published {
   color: #9D004F;
 }
