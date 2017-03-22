@@ -640,6 +640,7 @@ h3.widgettitle {
 }
 .article-bottom .widget {
   border-bottom: 1px #eaeaea solid;
+  font-size: 19.552px;
 }
 .article-bottom .widget:first-child {
   border-top: 1px #eaeaea solid;
@@ -927,6 +928,11 @@ a {
 a:hover {
   color: #4485c7;
 }
+h1,
+h2,
+h3 {
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+}
 span.date-published {
   color: #9D004F;
 }
@@ -950,6 +956,7 @@ span.date-published {
   max-height: 150px;
 }
 #site-footer .widgettitle {
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
   font-size: 22px;
 }
 #site-footer p,
