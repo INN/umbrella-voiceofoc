@@ -30,6 +30,7 @@ add_filter( 'largo_load_more_posts_json', 'voiceofoc_homepage_largo_load_more_po
 function voiceofoc_homepage_tax_query() {
 	return array(
 		'relation' => 'OR',
+		// exclude a post if it's in any of these terms
 		array(
 			array(
 				'taxonomy' => 'category',
@@ -44,6 +45,7 @@ function voiceofoc_homepage_tax_query() {
 				'operator' => 'NOT IN',
 			)
 		),
+		// but include it if it is in any of those terms _and_ in the "Behind the Orange Curtain" category
 		array(
 			'relation' => 'AND',
 			array(
