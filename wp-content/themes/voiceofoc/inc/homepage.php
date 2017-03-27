@@ -38,7 +38,7 @@ function voiceofoc_homepage_tax_query() {
 		// for transition planning
 		array(
 			'taxonomy' => 'post_tag',
-			'terms' => array( 'press-releases', 'opinion', 'partner-media' ),
+			'terms' => array( 'opinion', 'partner-media' ),
 			'field' => 'slug',
 			'operator' => 'NOT IN',
 		)
