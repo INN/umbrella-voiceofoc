@@ -29,18 +29,40 @@ add_filter( 'largo_load_more_posts_json', 'voiceofoc_homepage_largo_load_more_po
  */
 function voiceofoc_homepage_tax_query() {
 	return array(
+		'relation' => 'OR',
 		array(
-			'taxonomy' => 'category',
-			'field' => 'slug',
-			'terms' => array( 'communications', 'press-releases', 'opinion', 'news-brief' ),
-			'operator' => 'NOT IN',
+			array(
+				'taxonomy' => 'category',
+				'field' => 'slug',
+				'terms' => array( 'communications', 'press-releases', 'opinion', 'news-brief' ),
+				'operator' => 'NOT IN',
+			),
+			array(
+				'taxonomy' => 'post_tag',
+				'terms' => array( 'opinion', 'partner-media' ),
+				'field' => 'slug',
+				'operator' => 'NOT IN',
+			)
 		),
-		// for transition planning
 		array(
-			'taxonomy' => 'post_tag',
-			'terms' => array( 'opinion', 'partner-media' ),
-			'field' => 'slug',
-			'operator' => 'NOT IN',
-		)
+			'relation' => 'AND',
+			array(
+				'taxonomy' => 'category',
+				'field' => 'slug',
+				'terms' => array( 'behind-the-orange-curtain' ),
+			),
+			array(
+				array(
+					'taxonomy' => 'category',
+					'field' => 'slug',
+					'terms' => array( 'communications', 'press-releases', 'opinion', 'news-brief' ),
+				),
+				array(
+					'taxonomy' => 'post_tag',
+					'terms' => array( 'opinion', 'partner-media' ),
+					'field' => 'slug',
+				)
+			),
+		),
 	);
 }
