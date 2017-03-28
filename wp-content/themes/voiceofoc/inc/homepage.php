@@ -47,23 +47,10 @@ function voiceofoc_homepage_tax_query() {
 		),
 		// but include it if it is in any of those terms _and_ in the "Behind the Orange Curtain" category
 		array(
-			'relation' => 'AND',
 			array(
 				'taxonomy' => 'category',
 				'field' => 'slug',
 				'terms' => array( 'behind-the-orange-curtain' ),
-			),
-			array(
-				array(
-					'taxonomy' => 'category',
-					'field' => 'slug',
-					'terms' => array( 'communications', 'press-releases', 'opinion', 'news-brief' ),
-				),
-				array(
-					'taxonomy' => 'post_tag',
-					'terms' => array( 'opinion', 'partner-media' ),
-					'field' => 'slug',
-				)
 			),
 		),
 	);
