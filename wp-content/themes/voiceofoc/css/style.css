@@ -686,6 +686,22 @@ h3.widgettitle {
 .article-bottom .largo-related-posts h4 a {
   color: #000000;
 }
+.article-bottom #header-donate-sidebar {
+  position: absolute;
+  right: 0;
+}
+.article-bottom #header-donate-sidebar .widget {
+  margin: 0;
+}
+.article-bottom #header-donate-sidebar a {
+  background: #f68121;
+  color: #fff;
+  font-family: futura-pt-bold, "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-size: 16px;
+  padding: 4px 10px;
+  margin-left: .25em;
+  text-transform: none;
+}
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
   margin-bottom: 0;
@@ -962,6 +978,7 @@ span.date-published {
   display: none;
 }
 #site-header {
+  position: relative;
   text-align: center;
 }
 #site-header .header_img {
