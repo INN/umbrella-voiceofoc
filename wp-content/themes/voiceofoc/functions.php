@@ -90,6 +90,8 @@ function voiceofoc_donate_sidebar() {
 		'id'            => 'voiceofoc_donate_sidebar',
 		'class'         => 'header-donate-sidebar',
 		'name'          => __( 'Header Donate Area', 'voiceofoc' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 	);
 	register_sidebar( $args );
 
@@ -99,9 +101,9 @@ add_action( 'widgets_init', 'voiceofoc_donate_sidebar' );
 // Add display for registered Sidebar
 function voiceofoc_donate_sidebar_display() {
 	if ( is_active_sidebar( 'voiceofoc_donate_sidebar' ) ) :
-		echo '<ul id="header-donate-sidebar">';
+		echo '<div id="header-donate-sidebar">';
 			dynamic_sidebar( 'voiceofoc_donate_sidebar' );
-		echo '</ul>';
+		echo '</div>';
 	endif;
 }
 add_action( 'largo_header_after_largo_header', 'voiceofoc_donate_sidebar_display' );
