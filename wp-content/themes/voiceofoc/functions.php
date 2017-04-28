@@ -76,3 +76,10 @@ function voiceofoc_adsbygoogle() {
 	<?php
 }
 add_action( 'wp_head', 'voiceofoc_adsbygoogle' );
+
+/**
+  * Added by request
+  * @since April 27, 2017
+  */
+
+  define( 'SHOW_GLOBAL_NAV', FALSE );
