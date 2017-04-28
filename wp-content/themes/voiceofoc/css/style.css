@@ -703,6 +703,7 @@ h3.widgettitle {
   margin-left: .25em;
   text-transform: none;
   line-height: 30px;
+  text-transform: uppercase;
 }
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
