@@ -337,6 +337,10 @@ ul.nav .menu-item-271287 {
 #main-nav.navbar {
   border: none;
 }
+#main-nav.navbar ul.nav .menu-item-304702,
+#main-nav.navbar ul.nav .menu-item-271287 {
+  display: none;
+}
 .navbar {
   font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
 }
