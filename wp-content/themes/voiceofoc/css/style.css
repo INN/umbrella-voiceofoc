@@ -686,14 +686,15 @@ h3.widgettitle {
 .article-bottom .largo-related-posts h4 a {
   color: #000000;
 }
-.article-bottom #header-donate-sidebar {
+#header-donate-sidebar {
   position: absolute;
   right: 0;
+  bottom: -20px;
 }
-.article-bottom #header-donate-sidebar .widget {
+#header-donate-sidebar .widget {
   margin: 0;
 }
-.article-bottom #header-donate-sidebar a {
+#header-donate-sidebar a {
   background: #f68121;
   color: #fff;
   font-family: futura-pt-bold, "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
@@ -701,6 +702,7 @@ h3.widgettitle {
   padding: 4px 10px;
   margin-left: .25em;
   text-transform: none;
+  line-height: 30px;
 }
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
