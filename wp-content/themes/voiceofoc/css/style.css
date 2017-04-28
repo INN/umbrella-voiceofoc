@@ -329,6 +329,11 @@ footer #boilerplate a:hover {
 .toggle-nav-bar .bars .icon-bar {
   background-color: #000000;
 }
+ul.nav .menu-item-304702,
+ul.nav .menu-item-271287 {
+  background-color: #f68121;
+  color: #ffffff;
+}
 #main-nav.navbar {
   border: none;
 }
