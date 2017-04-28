@@ -329,8 +329,17 @@ footer #boilerplate a:hover {
 .toggle-nav-bar .bars .icon-bar {
   background-color: #000000;
 }
+ul.nav .menu-item-304702,
+ul.nav .menu-item-271287 {
+  background-color: #f68121;
+  color: #ffffff;
+}
 #main-nav.navbar {
   border: none;
+}
+#main-nav.navbar ul.nav .menu-item-304702,
+#main-nav.navbar ul.nav .menu-item-271287 {
+  display: none;
 }
 .navbar {
   font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;

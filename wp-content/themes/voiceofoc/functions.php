@@ -2,11 +2,11 @@
 
 // This site is an INN Member
 if ( ! defined( 'INN_MEMBER' ) ) {
-        define( 'INN_MEMBER', true );
+		define( 'INN_MEMBER', true );
 }
 // This site is hosted by INN
 if ( ! defined( 'INN_HOSTED' ) ) {
-        define( 'INN_HOSTED', true );
+		define( 'INN_HOSTED', true );
 }
 
 /**
@@ -76,3 +76,32 @@ function voiceofoc_adsbygoogle() {
 	<?php
 }
 add_action( 'wp_head', 'voiceofoc_adsbygoogle' );
+
+/**
+ * Added by request
+ * @since April 27, 2017
+ */
+define( 'SHOW_GLOBAL_NAV', false );
+
+// Register Sidebar
+function voiceofoc_donate_sidebar() {
+
+	$args = array(
+		'id'            => 'voiceofoc_donate_sidebar',
+		'class'         => 'header-donate-sidebar',
+		'name'          => __( 'Header Donate Area', 'voiceofoc' ),
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'voiceofoc_donate_sidebar' );
+
+// Add display for registered Sidebar
+function voiceofoc_donate_sidebar_display() {
+	if ( is_active_sidebar( 'voiceofoc_donate_sidebar' ) ) :
+		echo '<ul id="header-donate-sidebar">';
+			dynamic_sidebar( 'voiceofoc_donate_sidebar' );
+		echo '</ul>';
+	endif;
+}
+add_action( 'largo_header_after_largo_header', 'voiceofoc_donate_sidebar_display' );
