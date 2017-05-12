@@ -459,12 +459,6 @@ nav.navbar div.navbar-inner {
     color: #9D004F;
   }
 }
-@media only screen and (max-width: 930px) {
-  #header-donate-sidebar {
-    position: relative;
-    padding: 1.5em;
-  }
-}
 body.normal.single-post article.post > header h1 {
   padding-top: 12px;
 }
@@ -1126,4 +1120,13 @@ header.archive-background .rss-subscribe-link {
   #content {
     margin-bottom: 24px;
   }
+}
+@media only screen and (max-width: 930px) {
+  #header-donate-sidebar {
+    position: relative;
+    padding: 1.5em;
+  }
+}
+.nav-shelf li.donate a.donate-link {
+  display: none;
 }
