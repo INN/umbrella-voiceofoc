@@ -29,6 +29,7 @@ if ( ! is_single() && ! is_singular() || ! of_get_option( 'main_nav_hide_article
 				?>
 				<div class="nav-right">
 					<?php
+					
 					/* Check to display Social Media Icons */
 					if ( of_get_option( 'show_header_social') ) { ?>
 						<ul id="header-social" class="social-icons visible-desktop">

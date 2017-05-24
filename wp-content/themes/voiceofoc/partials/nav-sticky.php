@@ -153,7 +153,7 @@ $site_name = ( of_get_option( 'nav_alt_site_name', false ) ) ? of_get_option( 'n
 									<a class="donate-link" href="http://voiceofoc.us9.list-manage.com/subscribe?u=21b45ca592433dae9870e9e71&id=6100b0e74b">
 										<span><?php echo "Subscribe"; ?></span>
 									</a>
-								</li><?php
+								</li> <?php
 								}
 							}
 							if (has_nav_menu('global-nav')) {
