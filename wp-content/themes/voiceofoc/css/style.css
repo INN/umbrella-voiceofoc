@@ -419,6 +419,11 @@ nav.navbar div.navbar-inner {
 #secondary-nav ul li.menu-item {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 }
+@media (max-width: 510px) {
+  #header-extras li.donate {
+    display: none;
+  }
+}
 .show-mobile {
   display: none;
 }
