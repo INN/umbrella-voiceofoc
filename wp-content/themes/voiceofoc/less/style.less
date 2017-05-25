@@ -218,3 +218,10 @@ header.archive-background {
 .nav-shelf li.donate a.donate-link {
 	display: none;
 }
+
+// Hide duplicate Subscribe/Donate from interior page sticky nav
+@media only screen and (min-width: 769px) {
+	.navbar.sticky-navbar li.mobile-call-to-action a {
+		display: none;
+	}
+}

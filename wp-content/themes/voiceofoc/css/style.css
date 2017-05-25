@@ -1135,3 +1135,8 @@ header.archive-background .rss-subscribe-link {
 .nav-shelf li.donate a.donate-link {
   display: none;
 }
+@media only screen and (min-width: 769px) {
+  .navbar.sticky-navbar li.mobile-call-to-action a {
+    display: none;
+  }
+}
