@@ -170,4 +170,4 @@ function voiceofoc_tronc_DFP_ads() {
 	<!-- End GPT Async Tag -->
 	<?php
 }
-add_action( 'wp_head', 'voiceofoc_tronc_DFP_ads' );
+#add_action( 'wp_head', 'voiceofoc_tronc_DFP_ads' );
