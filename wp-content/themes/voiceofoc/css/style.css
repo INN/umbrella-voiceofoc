@@ -329,8 +329,14 @@ footer #boilerplate a:hover {
 .toggle-nav-bar .bars .icon-bar {
   background-color: #000000;
 }
+ul.nav .mobile-call-to-action {
+  background-color: #f68121;
+}
 #main-nav.navbar {
   border: none;
+}
+#main-nav.navbar ul.nav .mobile-call-to-action {
+  display: none;
 }
 .navbar {
   font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
@@ -367,6 +373,19 @@ footer #boilerplate a:hover {
 .navbar.sticky-navbar li a:hover .caret:before {
   border-top-color: #fff;
 }
+.navbar.sticky-navbar li.mobile-call-to-action a {
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+.navbar.sticky-navbar li.mobile-call-to-action a:hover {
+  background-color: #000;
+}
+.navbar.sticky-navbar .nav-right #header-extras .donate a span {
+  background-color: #f68121;
+}
+.navbar.sticky-navbar .nav-right #header-extras .donate a span:hover {
+  background-color: #000;
+}
 .dropdown-menu .active > a:hover {
   color: #fff;
   background-color: #f68121;
@@ -399,6 +418,11 @@ nav.navbar div.navbar-inner {
 }
 #secondary-nav ul li.menu-item {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
+}
+@media (max-width: 510px) {
+  #header-extras li.donate {
+    display: none;
+  }
 }
 .show-mobile {
   display: none;
@@ -677,6 +701,29 @@ h3.widgettitle {
 .article-bottom .largo-related-posts h4 a {
   color: #000000;
 }
+#header-donate-sidebar {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+#header-donate-sidebar .widget {
+  margin: 0;
+}
+#header-donate-sidebar a {
+  background: #f68121;
+  color: #fff;
+  font-family: futura-pt-bold, "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-size: 16px;
+  padding: 4px 10px;
+  margin-left: .25em;
+  text-transform: none;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+#header-donate-sidebar a:hover {
+  background-color: #000;
+  text-decoration: none;
+}
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
   margin-bottom: 0;
@@ -953,6 +1000,7 @@ span.date-published {
   display: none;
 }
 #site-header {
+  position: relative;
   text-align: center;
 }
 #site-header .header_img {
@@ -1076,5 +1124,19 @@ header.archive-background .rss-subscribe-link {
   }
   #content {
     margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  #header-donate-sidebar {
+    position: relative;
+    padding: 1.5em;
+  }
+}
+.nav-shelf li.donate a.donate-link {
+  display: none;
+}
+@media only screen and (min-width: 769px) {
+  .navbar.sticky-navbar li.mobile-call-to-action a {
+    display: none;
   }
 }

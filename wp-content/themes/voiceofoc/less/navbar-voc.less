@@ -8,8 +8,17 @@
 .toggle-nav-bar .bars .icon-bar {
   background-color: @navbarBackground;
 }
+
+ul.nav .mobile-call-to-action, {
+    background-color: @ocOrange;
+}
+
 #main-nav.navbar {
   border: none;
+
+  ul.nav .mobile-call-to-action {
+    display: none;
+  }
 }
 .navbar {
   font-family: @headlineFontFamily;
@@ -45,6 +54,24 @@
     border-top-color: #fff;
   }
 }
+
+.navbar.sticky-navbar li.mobile-call-to-action a, {
+	color: #fff;
+	border-top: 1px solid #fff;
+
+	&:hover {
+		background-color: #000;
+	}
+}
+
+.navbar.sticky-navbar .nav-right #header-extras .donate a span {
+    background-color: @ocOrange;
+
+    &:hover {
+    	background-color: #000;
+    }
+}
+
 .dropdown-menu .active > a:hover {
   color: #fff;
   background-color: @ocOrange;
@@ -80,5 +107,11 @@ nav.navbar div.navbar-inner {
   }
   li.menu-item {
     font-family: @serifFontFamily;
+  }
+}
+
+@media (max-width: 510px) {
+  #header-extras li.donate {
+    display: none;
   }
 }

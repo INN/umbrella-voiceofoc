@@ -59,6 +59,7 @@ span.date-published{
   }
 }
 #site-header {
+  position: relative;
   text-align: center;
   .header_img {
     max-height: 150px;
@@ -201,7 +202,26 @@ header.archive-background {
     border-right: none;
   }
   #content {
-    margin-bottom: 24px; 
+    margin-bottom: 24px;
   }
 }
 
+// Center the donate/subscribe buttons for tablet - since May 2017
+@media only screen and (max-width: 930px) {
+	#header-donate-sidebar {
+		position: relative;
+		padding: 1.5em;
+	}
+}
+
+// Remove the extra donate button from hamburger menu
+.nav-shelf li.donate a.donate-link {
+	display: none;
+}
+
+// Hide duplicate Subscribe/Donate from interior page sticky nav
+@media only screen and (min-width: 769px) {
+	.navbar.sticky-navbar li.mobile-call-to-action a {
+		display: none;
+	}
+}
