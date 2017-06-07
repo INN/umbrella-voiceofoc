@@ -111,7 +111,7 @@ add_action( 'largo_header_after_largo_header', 'voiceofoc_donate_sidebar_display
 // Add tronc DFP ad tags
 function voiceofoc_tronc_DFP_ads() {
 
-	if ( is_home() ) {
+	if ( is_front_page() ) {
 		?>
 			<!-- Start Section Front (Homepage) GPT Async Tag -->
 			<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
