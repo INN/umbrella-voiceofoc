@@ -156,44 +156,54 @@ function voiceofoc_tronc_DFP_ads() {
 
 	else {
 			?>
-		<!-- Start Story (Article) GPT Async Tag -->
-		<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-		<script>
-		  var gptadslots = [];
-		  var googletag = googletag || {cmd:[]};
-		</script>
-		<script>
-		  googletag.cmd.push(function() {
-		    //Adslot 1 declaration
-		    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[728,90]], 'div-gpt-ad-5190402-1')
-		                             .setTargeting('pos', ['1'])
-		                             .addService(googletag.pubads()));
-		    //Adslot 2 declaration
-		    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[728,90]], 'div-gpt-ad-5190402-2')
-		                             .setTargeting('pos', ['2'])
-		                             .addService(googletag.pubads()));
-		    //Adslot 3 declaration
-		    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[728,90]], 'div-gpt-ad-5190402-3')
-		                             .setTargeting('pos', ['3'])
-		                             .addService(googletag.pubads()));
-		    //Adslot 4 declaration
-		    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[320,50]], 'div-gpt-ad-5190402-4')
-		                             .setTargeting('pos', ['1'])
-		                             .addService(googletag.pubads()));
-		    //Adslot 5 declaration
-		    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[300,250]], 'div-gpt-ad-5190402-5')
-		                             .setTargeting('pos', ['1'])
-		                             .addService(googletag.pubads()));
-		    //Adslot 6 declaration
-		    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[300,250]], 'div-gpt-ad-5190402-6')
-		                             .setTargeting('pos', ['2'])
-		                             .addService(googletag.pubads()));
 
-		    googletag.pubads().setTargeting('ptype', ['s']);
-		    googletag.enableServices();
-		  });
-		</script>
-		<!-- End GPT Async Tag -->
+			<!-- Start GPT Async Tag -->
+			<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+			<script>
+			  var gptadslots = [];
+			  var googletag = googletag || {cmd:[]};
+			</script>
+			<script>
+			  googletag.cmd.push(function() {
+			    //Adslot 1 declaration
+			    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[728,90]], 'div-gpt-ad-5190402-1')
+			                             .setTargeting('pos', ['1'])
+			                             .addService(googletag.pubads()));
+			    //Adslot 2 declaration
+			    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[728,90]], 'div-gpt-ad-5190402-2')
+			                             .setTargeting('pos', ['2'])
+			                             .addService(googletag.pubads()));
+			    //Adslot 3 declaration
+			    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[728,90]], 'div-gpt-ad-5190402-3')
+			                             .setTargeting('pos', ['3'])
+			                             .addService(googletag.pubads()));
+			    //Adslot 4 declaration
+			    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[320,50]], 'div-gpt-ad-5190402-4')
+			                             .setTargeting('pos', ['1'])
+			                             .addService(googletag.pubads()));
+			    //Adslot 5 declaration
+			    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[300,250]], 'div-gpt-ad-5190402-5')
+			                             .setTargeting('pos', ['1'])
+			                             .addService(googletag.pubads()));
+			    //Adslot 6 declaration
+			    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[300,250]], 'div-gpt-ad-5190402-6')
+			                             .setTargeting('pos', ['2'])
+			                             .addService(googletag.pubads()));
+			    //Adslot 7 declaration
+			    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[320,50]], 'div-gpt-ad-5190402-7')
+			                             .setTargeting('pos', ['2'])
+			                             .addService(googletag.pubads()));
+			    //Adslot 8 declaration
+			    gptadslots.push(googletag.defineSlot('/4011/trb.latimes/voiceoc', [[320,50]], 'div-gpt-ad-5190402-8')
+			                             .setTargeting('pos', ['3'])
+			                             .addService(googletag.pubads()));
+
+			    googletag.pubads().setTargeting('ptype', ['s']);
+			    googletag.enableServices();
+			  });
+			</script>
+			<!-- End GPT Async Tag -->
+
 		<?php
 	}
 }
