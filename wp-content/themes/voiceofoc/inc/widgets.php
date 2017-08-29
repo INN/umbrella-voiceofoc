@@ -64,15 +64,21 @@ function voiceofoc_widget_header_area_enabled() {
 }
 
 /**
+ * What bootstrap column-size class should be used?
+ */
+function voiceofoc_widget_header_area_classname() {
+	return 'span6';
+}
+
+/**
  * Apply per-term widget sizing classes to the widget-header-area widget area.
  *
  * @see voiceofoc_widget_header_area_enabled
  * @see voiceofoc_widget_header_area_register
  */
 function voiceofoc_widget_header_area_classes( $params ) {
-	#error_log(var_export( $params[0]['id'], true));
 	if ( $params[0]['id'] === 'widget-header-area' ) {
-		error_log(var_export( $params[0]['class'], true));
+		$params[0]['class'] .= voiceofoc_widget_header_area_classname();
 	}
 	return $params;
 }
