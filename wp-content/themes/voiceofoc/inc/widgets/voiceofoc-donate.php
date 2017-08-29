@@ -5,12 +5,12 @@
  */
 class voiceofoc_donate_widget extends WP_Widget {
 
-	function voiceofoc_donate_widget() {
+	function __construct() {
 		$widget_opts = array(
 			'classname' => 'voiceofoc-donate',
 			'description'=> __('Call-to-action for donations', 'largo')
 		);
-		$this->WP_Widget('voiceofoc-donate-widget', __('Voice of OC Donate Widget', 'largo'),$widget_opts);
+		parent::__construct( 'voiceofoc-donate-widget', __('Voice of OC Donate Widget', 'largo'), $widget_opts);
 	}
 	function widget( $args, $instance ) {
 		extract( $args );
