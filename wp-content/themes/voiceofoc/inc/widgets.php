@@ -51,7 +51,7 @@ function voiceofoc_widget_header_area_register() {
 		'after_title' => '</h5>'
 	) );
 }
-add_action( 'widget_init', 'voiceofoc_widget_header_area_register', 11 );
+add_action( 'widgets_init', 'voiceofoc_widget_header_area_register', 11 );
 
 /**
  * Check if the widget header area is enabled
