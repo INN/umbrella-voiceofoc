@@ -45,8 +45,8 @@ function voiceofoc_widget_header_area_register() {
 		'name' => __( 'Widget Header Area', 'voiceofoc' ),
 		'id' => 'widget-header-area',
 		'description' => __( '', 'voiceofoc' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
 		'before_title' => '<h5 class="widgettitle">',
 		'after_title' => '</h5>'
 	) );
@@ -78,7 +78,11 @@ function voiceofoc_widget_header_area_classname() {
  */
 function voiceofoc_widget_header_area_classes( $params ) {
 	if ( $params[0]['id'] === 'widget-header-area' ) {
-		$params[0]['class'] .= voiceofoc_widget_header_area_classname();
+		$params[0]['before_widget'] = str_replace(
+			'class="widget',
+			'class="widget ' . voiceofoc_widget_header_area_classname(),
+			$params[0]['before_widget']
+		);
 	}
 	return $params;
 }
