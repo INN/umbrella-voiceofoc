@@ -60,6 +60,12 @@ add_action( 'widgets_init', 'voiceofoc_widget_header_area_register', 11 );
  * @see partials/widget-header-area.php
  */
 function voiceofoc_widget_header_area_enabled() {
+	if ( ! is_archive() ) {
+		return false;
+	}
+	$queried_object = get_queried_object();
+	$whether = get_term_meta( $queried_object->term_id, HEADER_WIDGET_AREA_META_NAME, true );
+	error_log(var_export( $whether, true));
 	return true;
 }
 

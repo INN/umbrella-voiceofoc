@@ -16,6 +16,7 @@ $includes = array(
 	'/inc/homepage.php',
 	'/inc/widgets.php',
 	'/inc/misc.php',
+	'/inc/term-meta.php',
 );
 // Perform load
 foreach ( $includes as $include ) {
