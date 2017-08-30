@@ -87,7 +87,7 @@ function voiceofoc_widget_header_area_meta_form_save( $term_id ) {
 	if ( $old_whether && '' === $new_whether ) {
 		delete_term_meta( $term_id, HEADER_WIDGET_AREA_META_NAME );
 	} else if ( $old_whether !== $new_whether ) {
-		update_term_meta( $term_id, HEADER_WIDGET_AREA_META_NAME, $new_whether ), true);
+		update_term_meta( $term_id, HEADER_WIDGET_AREA_META_NAME, $new_whether );
 	}
 }
 add_action( 'edit_category', 'voiceofoc_widget_header_area_meta_form_save' );
