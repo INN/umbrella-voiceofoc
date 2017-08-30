@@ -65,8 +65,7 @@ function voiceofoc_widget_header_area_enabled() {
 	}
 	$queried_object = get_queried_object();
 	$whether = get_term_meta( $queried_object->term_id, HEADER_WIDGET_AREA_META_NAME, true );
-	error_log(var_export( $whether, true));
-	return true;
+	return ! empty ( $whether );
 }
 
 /**
