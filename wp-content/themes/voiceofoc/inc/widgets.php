@@ -64,15 +64,19 @@ function voiceofoc_widget_header_area_enabled() {
 		return false;
 	}
 	$queried_object = get_queried_object();
-	$whether = get_term_meta( $queried_object->term_id, HEADER_WIDGET_AREA_META_NAME, true );
+	$whether = get_term_meta( $queried_object->term_id, HEADER_WIDGET_AREA_ENABLED, true );
 	return ! empty ( $whether );
 }
 
 /**
  * What bootstrap column-size class should be used?
+ *
+ * Reads from the custom meta, or defaults to span6.
  */
 function voiceofoc_widget_header_area_classname() {
-	return 'span6';
+	$queried_object = get_queried_object();
+	$class = get_term_meta( $queried_object->term_id, HEADER_WIDGET_AREA_CLASS, true );
+	return !empty( $class ) ? $class : 'span6';
 }
 
 /**
