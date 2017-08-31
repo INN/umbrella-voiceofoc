@@ -1,5 +1,4 @@
-<?php 
-	
+<?php
 /**
  * Set up the Voice of OC custom widgets
  *
@@ -39,6 +38,7 @@ add_action( 'largo_header_before_largo_header', 'voiceofoc_header_widget_left' )
  * Register a widget area that shall appear in the headers of certain term archives.
  *
  * @see Helpscout conversation 1222
+ * @see voiceofoc_widget_header_area_classname
  */
 function voiceofoc_widget_header_area_register() {
 	register_sidebar( array(
@@ -56,7 +56,6 @@ add_action( 'widgets_init', 'voiceofoc_widget_header_area_register', 11 );
 /**
  * Check if the widget header area is enabled
  *
- * For now this is just a dummy function, but part of the task is to add a term meta option
  * @see partials/widget-header-area.php
  */
 function voiceofoc_widget_header_area_enabled() {

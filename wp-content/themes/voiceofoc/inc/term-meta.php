@@ -56,6 +56,7 @@ function voiceofoc_widget_header_area_meta_form_add() {
 }
 add_action( 'category_add_form_fields', 'voiceofoc_widget_header_area_meta_form_add' );
 add_action( 'post_tag_add_form_fields', 'voiceofoc_widget_header_area_meta_form_add' );
+
 /**
  * Edit form!
  */
