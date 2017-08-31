@@ -464,6 +464,50 @@ nav.navbar div.navbar-inner {
     color: #9D004F;
   }
 }
+/**
+ * responsive styles for the widget header area
+ */
+@media (min-width: 768px) {
+  #widget-header-area .span12:nth-child(n) {
+    margin-left: 0;
+    width: 100%;
+    clear: both;
+  }
+  #widget-header-area .span6:nth-child(2n+1) {
+    margin-left: 0;
+    width: 100%;
+    clear: left;
+  }
+  #widget-header-area .span4:nth-child(3n+1) {
+    margin-left: 0;
+    width: 100%;
+    clear: left;
+  }
+  #widget-header-area .span3:nth-child(4n+1) {
+    margin-left: 0;
+    width: 100%;
+    clear: left;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  #widget-header-area .span3 {
+    width: 48.93617021%;
+  }
+  #widget-header-area .span3:nth-child(2n+1) {
+    margin-left: 0;
+    clear: left;
+  }
+}
+@media (max-width: 768px) {
+  #widget-header-area .span12,
+  #widget-header-area .span6,
+  #widget-header-area .span4,
+  #widget-header-area .span3 {
+    margin-left: 0;
+    width: 100%;
+    clear: both;
+  }
+}
 body.normal.single-post article.post > header h1 {
   padding-top: 12px;
 }
