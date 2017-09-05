@@ -138,6 +138,13 @@
   padding: 0;
   border: 0;
 }
+.widget-title-common {
+  background: none;
+  padding: 0;
+  font-style: normal;
+  font-size: 16px;
+  color: #f68121;
+}
 /**
  * Before Footer, Site Footer
  *
@@ -609,7 +616,8 @@ body.normal.single-post .hero p.wp-media-credit {
   background: #eaeaea;
 }
 h2.widgettitle,
-h3.widgettitle {
+h3.widgettitle,
+h5.widgettitle {
   font-family: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
 }
 .single-post #sidebar .widget,
@@ -763,6 +771,13 @@ h3.widgettitle {
 #header-donate-sidebar a:hover {
   background-color: #000;
   text-decoration: none;
+}
+#widget-header-area .widgettitle {
+  background: none;
+  padding: 0;
+  font-style: normal;
+  font-size: 16px;
+  color: #f68121;
 }
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;

@@ -1,5 +1,6 @@
 h2.widgettitle,
-h3.widgettitle {
+h3.widgettitle,
+h5.widgettitle {
   font-family: @sansFontFamily;
 }
 
@@ -43,11 +44,7 @@ h3.widgettitle {
   // these should be the same
   .widgettitle,
   .largo-recent-posts h5.top-tag a {
-    background: none;
-    padding: 0;
-    font-style: normal;
-    font-size: 16px;
-    color: @ocOrange;
+    .widget-title-common
   }
   .widgettitle a {
     color: @ocOrange;
@@ -173,4 +170,8 @@ h3.widgettitle {
     background-color: #000;
     text-decoration: none;
   }
+}
+
+#widget-header-area .widgettitle {
+  .widget-title-common
 }
