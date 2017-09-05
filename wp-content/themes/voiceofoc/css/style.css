@@ -470,22 +470,18 @@ nav.navbar div.navbar-inner {
 @media (min-width: 768px) {
   #widget-header-area .span12:nth-child(n) {
     margin-left: 0;
-    width: 100%;
     clear: both;
   }
   #widget-header-area .span6:nth-child(2n+1) {
     margin-left: 0;
-    width: 100%;
     clear: left;
   }
   #widget-header-area .span4:nth-child(3n+1) {
     margin-left: 0;
-    width: 100%;
     clear: left;
   }
   #widget-header-area .span3:nth-child(4n+1) {
     margin-left: 0;
-    width: 100%;
     clear: left;
   }
 }
