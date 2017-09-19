@@ -5,12 +5,12 @@
  */
 class voiceofoc_recent_posts_widget extends WP_Widget {
 
-	function voiceofoc_recent_posts_widget() {
+	function __construct() {
 		$widget_ops = array(
 			'classname' => 'voiceofoc-recent-posts',
 			'description' => __('Show your most recent posts with thumbnails and excerpts', 'largo')
 		);
-		$this->WP_Widget( 'voiceofoc-recent-posts-widget', __('Voice of OC Recent Posts', 'largo'), $widget_ops);
+		parent::__construct( 'voiceofoc-recent-posts-widget', __('Voice of OC Recent Posts', 'largo'), $widget_ops);
 	}
 
 	function widget( $args, $instance ) {

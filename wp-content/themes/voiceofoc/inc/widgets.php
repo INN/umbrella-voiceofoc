@@ -1,5 +1,4 @@
-<?php 
-	
+<?php
 /**
  * Set up the Voice of OC custom widgets
  *
@@ -34,3 +33,65 @@ function voiceofoc_header_widget_left() {
 	dynamic_sidebar( 'voiceofoc-header-left' );
 }
 add_action( 'largo_header_before_largo_header', 'voiceofoc_header_widget_left' );
+
+/**
+ * Register a widget area that shall appear in the headers of certain term archives.
+ *
+ * @see Helpscout conversation 1222
+ * @see voiceofoc_widget_header_area_classname
+ */
+function voiceofoc_widget_header_area_register() {
+	register_sidebar( array(
+		'name' => __( 'Widget Header Area', 'voiceofoc' ),
+		'id' => 'widget-header-area',
+		'description' => __( '', 'voiceofoc' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h5 class="widgettitle">',
+		'after_title' => '</h5>'
+	) );
+}
+add_action( 'widgets_init', 'voiceofoc_widget_header_area_register', 11 );
+
+/**
+ * Check if the widget header area is enabled
+ *
+ * @see partials/widget-header-area.php
+ */
+function voiceofoc_widget_header_area_enabled() {
+	if ( ! is_archive() ) {
+		return false;
+	}
+	$queried_object = get_queried_object();
+	$whether = get_term_meta( $queried_object->term_id, HEADER_WIDGET_AREA_ENABLED, true );
+	return ! empty ( $whether );
+}
+
+/**
+ * What bootstrap column-size class should be used?
+ *
+ * Reads from the custom meta, or defaults to span6.
+ */
+function voiceofoc_widget_header_area_classname() {
+	$queried_object = get_queried_object();
+	$class = get_term_meta( $queried_object->term_id, HEADER_WIDGET_AREA_CLASS, true );
+	return !empty( $class ) ? $class : 'span6';
+}
+
+/**
+ * Apply per-term widget sizing classes to the widget-header-area widget area.
+ *
+ * @see voiceofoc_widget_header_area_enabled
+ * @see voiceofoc_widget_header_area_register
+ */
+function voiceofoc_widget_header_area_classes( $params ) {
+	if ( $params[0]['id'] === 'widget-header-area' ) {
+		$params[0]['before_widget'] = str_replace(
+			'class="widget',
+			'class="widget ' . voiceofoc_widget_header_area_classname(),
+			$params[0]['before_widget']
+		);
+	}
+	return $params;
+}
+add_filter( 'dynamic_sidebar_params', 'voiceofoc_widget_header_area_classes' );
