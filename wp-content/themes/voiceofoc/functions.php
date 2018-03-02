@@ -109,6 +109,89 @@ function voiceofoc_donate_sidebar_display() {
 }
 add_action( 'largo_header_after_largo_header', 'voiceofoc_donate_sidebar_display' );
 
+
+
+
+// Register Sidebar
+function voiceofoc_sponsorhome_sidebar() {
+
+	$args = array(
+		'id'            => 'voiceofoc_sponsorhome_sidebar',
+		'class'         => 'sponsorhome-sidebar',
+		'name'          => __( 'Homepage Sponsorship Area', 'voiceofoc' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'voiceofoc_sponsorhome_sidebar' );
+
+// Add display for registered Sidebar
+function voiceofoc_sponsorhome_sidebar_display($post, $query) {
+	if ( is_active_sidebar( 'voiceofoc_sponsorhome_sidebar' ) ) :
+		echo '<div id="sponsorhome-sidebar">';
+			if ($query->current_post == 0)
+				dynamic_sidebar( 'voiceofoc_sponsorhome_sidebar' );
+		echo '</div>';
+	endif;
+}
+add_action( 'largo_before_home_list_post', 'voiceofoc_sponsorhome_sidebar_display', 10, 2);
+
+
+// Register Sidebar
+function voiceofoc_sponsorheader_sidebar() {
+
+	$args = array(
+		'id'            => 'voiceofoc_sponsorheader_sidebar',
+		'class'         => 'sponsorheader-sidebar',
+		'name'          => __( 'Header Sponsorship Area', 'voiceofoc' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'voiceofoc_sponsorheader_sidebar' );
+
+// Add display for registered Sidebar
+function voiceofoc_sponsorheader_sidebar_display() {
+	if ( is_active_sidebar( 'voiceofoc_sponsorheader_sidebar' ) && !is_home() ) :
+		echo '<div id="sponsorheader-sidebar">';
+			dynamic_sidebar( 'voiceofoc_sponsorheader_sidebar' );
+		echo '</div>';
+	endif;
+}
+add_action( 'largo_after_nav', 'voiceofoc_sponsorheader_sidebar_display');
+
+
+// Register Sidebar
+function voiceofoc_sponsorrightbar_sidebar() {
+
+	$args = array(
+		'id'            => 'voiceofoc_sponsorrightbar_sidebar',
+		'class'         => 'sponsorrightbar-sidebar',
+		'name'          => __( 'Right Sidebar Sponsorship Area', 'voiceofoc' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'voiceofoc_sponsorrightbar_sidebar' );
+
+// Add display for registered Sidebar
+function voiceofoc_sponsorrightbar_sidebar_display() {
+	if ( is_active_sidebar( 'voiceofoc_sponsorrightbar_sidebar' ) && !is_home() ) :
+		echo '<div id="sponsorrightbar-sidebar">';
+			dynamic_sidebar( 'voiceofoc_sponsorrightbar_sidebar' );
+		echo '</div>';
+	endif;
+}
+add_action( 'largo_after_sidebar_widgets', 'voiceofoc_sponsorrightbar_sidebar_display');
+
+
+
 // Add tronc DFP ad tags
 function voiceofoc_tronc_DFP_ads() {
 
