@@ -118,7 +118,7 @@ function voiceofoc_sponsorhome_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorhome_sidebar',
 		'class'         => 'sponsorhome-sidebar',
-		'name'          => __( 'Sponsorship: Home After Featured Post', 'voiceofoc' ),
+		'name'          => __( 'Home After Featured Post', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
@@ -145,7 +145,7 @@ function voiceofoc_sponsorheader_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorheader_sidebar',
 		'class'         => 'sponsorheader-sidebar',
-		'name'          => __( 'Sponsorship: Category Headers', 'voiceofoc' ),
+		'name'          => __( 'Category Header', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
@@ -173,7 +173,7 @@ function voiceofoc_sponsorpost_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorpost_sidebar',
 		'class'         => 'sponsorpost-sidebar',
-		'name'          => __( 'Sponsorship: Post Header', 'voiceofoc' ),
+		'name'          => __( 'Post Header', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
@@ -199,7 +199,7 @@ function voiceofoc_sponsorrightbar_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorrightbar_sidebar',
 		'class'         => 'sponsorrightbar-sidebar',
-		'name'          => __( 'Sponsorship: Category Sidebar', 'voiceofoc' ),
+		'name'          => __( 'Category Sidebar 2', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
