@@ -118,7 +118,7 @@ function voiceofoc_sponsorhome_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorhome_sidebar',
 		'class'         => 'sponsorhome-sidebar',
-		'name'          => __( 'Homepage Sponsorship Area', 'voiceofoc' ),
+		'name'          => __( 'Sponsorship: Home After Featured Post', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
@@ -145,7 +145,7 @@ function voiceofoc_sponsorheader_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorheader_sidebar',
 		'class'         => 'sponsorheader-sidebar',
-		'name'          => __( 'Header Sponsorship Area', 'voiceofoc' ),
+		'name'          => __( 'Sponsorship: Category Headers', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
@@ -156,7 +156,7 @@ add_action( 'widgets_init', 'voiceofoc_sponsorheader_sidebar' );
 
 // Add display for registered Sidebar
 function voiceofoc_sponsorheader_sidebar_display() {
-	if ( is_active_sidebar( 'voiceofoc_sponsorheader_sidebar' ) && !is_home() ) :
+	if ( is_active_sidebar( 'voiceofoc_sponsorheader_sidebar' ) && is_category() ) :
 		echo '<div id="sponsorheader-sidebar">';
 			dynamic_sidebar( 'voiceofoc_sponsorheader_sidebar' );
 		echo '</div>';
@@ -165,13 +165,41 @@ function voiceofoc_sponsorheader_sidebar_display() {
 add_action( 'largo_after_nav', 'voiceofoc_sponsorheader_sidebar_display');
 
 
+
+
+// Register Sidebar
+function voiceofoc_sponsorpost_sidebar() {
+
+	$args = array(
+		'id'            => 'voiceofoc_sponsorpost_sidebar',
+		'class'         => 'sponsorpost-sidebar',
+		'name'          => __( 'Sponsorship: Post Header', 'voiceofoc' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+	);
+	register_sidebar( $args );
+
+}
+add_action( 'widgets_init', 'voiceofoc_sponsorpost_sidebar' );
+
+// Add display for registered Sidebar
+function voiceofoc_sponsorpost_sidebar_display() {
+	if ( is_active_sidebar( 'voiceofoc_sponsorpost_sidebar' ) && is_single() ) :
+		echo '<div id="sponsorpost-sidebar">';
+			dynamic_sidebar( 'voiceofoc_sponsorpost_sidebar' );
+		echo '</div>';
+	endif;
+}
+add_action( 'largo_after_nav', 'voiceofoc_sponsorpost_sidebar_display');
+
+
 // Register Sidebar
 function voiceofoc_sponsorrightbar_sidebar() {
 
 	$args = array(
 		'id'            => 'voiceofoc_sponsorrightbar_sidebar',
 		'class'         => 'sponsorrightbar-sidebar',
-		'name'          => __( 'Right Sidebar Sponsorship Area', 'voiceofoc' ),
+		'name'          => __( 'Sponsorship: Category Sidebar', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
