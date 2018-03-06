@@ -118,7 +118,7 @@ function voiceofoc_sponsorhome_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorhome_sidebar',
 		'class'         => 'sponsorhome-sidebar',
-		'name'          => __( 'Home After Featured Post', 'voiceofoc' ),
+		'name'          => __( 'Sponsorship: Home After Featured Post', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
@@ -129,9 +129,8 @@ add_action( 'widgets_init', 'voiceofoc_sponsorhome_sidebar' );
 
 // Add display for registered Sidebar
 function voiceofoc_sponsorhome_sidebar_display($post, $query) {
-	if ( is_active_sidebar( 'voiceofoc_sponsorhome_sidebar' ) ) :
-		echo '<div id="sponsorhome-sidebar">';
-			if ($query->current_post == 0)
+	if ( is_active_sidebar( 'voiceofoc_sponsorhome_sidebar' ) && $query->current_post == 0 ) :
+		echo '<div id="sponsorhome-sidebar" class="clearfix">';
 				dynamic_sidebar( 'voiceofoc_sponsorhome_sidebar' );
 		echo '</div>';
 	endif;
@@ -145,7 +144,7 @@ function voiceofoc_sponsorheader_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorheader_sidebar',
 		'class'         => 'sponsorheader-sidebar',
-		'name'          => __( 'Category Header', 'voiceofoc' ),
+		'name'          => __( 'Sponsorship: Category Headers', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
@@ -173,7 +172,7 @@ function voiceofoc_sponsorpost_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorpost_sidebar',
 		'class'         => 'sponsorpost-sidebar',
-		'name'          => __( 'Post Header', 'voiceofoc' ),
+		'name'          => __( 'Sponsorship: Post Header', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
@@ -199,7 +198,7 @@ function voiceofoc_sponsorrightbar_sidebar() {
 	$args = array(
 		'id'            => 'voiceofoc_sponsorrightbar_sidebar',
 		'class'         => 'sponsorrightbar-sidebar',
-		'name'          => __( 'Category Sidebar 2', 'voiceofoc' ),
+		'name'          => __( 'Sponsorship: Category Sidebar', 'voiceofoc' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 	);
