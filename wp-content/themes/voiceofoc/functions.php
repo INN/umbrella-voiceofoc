@@ -155,7 +155,7 @@ add_action( 'widgets_init', 'voiceofoc_sponsorheader_sidebar' );
 
 // Add display for registered Sidebar
 function voiceofoc_sponsorheader_sidebar_display() {
-	if ( is_active_sidebar( 'voiceofoc_sponsorheader_sidebar' ) && is_category() ) :
+	if ( is_active_sidebar( 'voiceofoc_sponsorheader_sidebar' ) && is_tag() || is_category() ) :
 		echo '<div id="sponsorheader-sidebar" class="sponsorship-widget-area">';
 			dynamic_sidebar( 'voiceofoc_sponsorheader_sidebar' );
 		echo '</div>';
