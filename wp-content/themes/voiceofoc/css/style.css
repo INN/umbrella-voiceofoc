@@ -798,6 +798,9 @@ h5.widgettitle {
   margin: 0 auto;
   width: 60%;
 }
+.sponsorship-widget-area .widget {
+  margin-bottom: 0px;
+}
 .gform_wrapper.donation_form_wrapper .field_sublabel_above {
   height: auto;
   margin-bottom: 0;
