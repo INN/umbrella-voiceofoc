@@ -129,7 +129,7 @@ add_action( 'widgets_init', 'voiceofoc_sponsorhome_sidebar' );
 
 // Add display for registered Sidebar
 function voiceofoc_sponsorhome_sidebar_display($post, $query) {
-	if ( is_active_sidebar( 'voiceofoc_sponsorhome_sidebar' ) && $query->current_post == 0 ) :
+	if ( is_active_sidebar( 'voiceofoc_sponsorhome_sidebar' ) && $query->current_post == 1 ) :
 		echo '<div id="sponsorhome-sidebar" class="clearfix sponsorship-widget-area">';
 				dynamic_sidebar( 'voiceofoc_sponsorhome_sidebar' );
 		echo '</div>';
