@@ -14,7 +14,6 @@ module.exports = function(grunt) {
 
     var CSS_LESS_FILES = {
         'css/style.css': 'less/style.less',
-        'homepages/assets/css/voiceofoc.css': 'homepages/assets/less/voiceofoc.less',
     };
 
     grunt.initConfig({
