@@ -40,10 +40,8 @@ add_action('init', 'voiceofoc_image_sizes', 20);
  * @since Largo 0.4
  */
 function voiceofoc_stylesheet() {
-	$suffix = (LARGO_DEBUG)? '' : '.min';
-
 	wp_dequeue_style( 'largo-child-styles' );
-	wp_enqueue_style( 'voiceofoc', get_stylesheet_directory_uri().'/css/style' . $suffix . '.css' );
+	wp_enqueue_style( 'voiceofoc', get_stylesheet_directory_uri().'/css/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'voiceofoc_stylesheet', 20 );
 

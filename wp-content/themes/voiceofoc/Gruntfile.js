@@ -25,43 +25,19 @@ module.exports = function(grunt) {
                     paths: ['less', '../largo/less/inc'], // This includes all of largo's less/inc.
                     outputSourceFiles: true,
                     sourceMapBasepath: path,
-                    compress: true
+                    compress: false
                 },
                 files: CSS_LESS_FILES
             },
-        },
-
-        cssmin: {
-            target: {
-                options: {
-                    report: 'gzip'
-                },
-                files: [{
-                    expand: true,
-                    cwd: 'css',
-                    src: ['*.css', '!*.min.css'],
-                    dest: 'css',
-                    ext: '.min.css'
-                },
-                {
-                    expand: true,
-                    cwd: 'homepages/assets/css',
-                    src: ['*.css', '!*.min.css'],
-                    dest: 'homepages/assets/css',
-                    ext: '.min.css'
-                }]
-            }
         },
 
         watch: {
             less: {
                 files: [
                     'less/**/*.less',
-                    'homepages/assets/less/**/*.less'
                 ],
                 tasks: [
                     'less:compile',
-                    'cssmin'
                 ]
             }
         },
