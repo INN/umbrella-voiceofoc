@@ -1197,6 +1197,9 @@ header.archive-background .rss-subscribe-link {
   text-transform: uppercase;
   font-weight: bold;
 }
+#main {
+  margin-top: 0;
+}
 @media (max-width: 979px) {
   #main {
     margin-bottom: 24px;

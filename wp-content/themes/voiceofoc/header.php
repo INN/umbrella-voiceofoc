@@ -14,8 +14,11 @@
 	 *
 	 * Contains the HEAD content and opening of the id=page and id=main DIV elements.
 	 *
+	 * Removes from Largo's header the main nav, secondary nav, and homepage alert items.
+	 * https://github.com/INN/umbrella-voiceofoc/issues/34
+	 *
 	 * @package Largo
-	 * @since 0.1
+	 * @since 0.6.4
 	 */
 	?>
 	<title>
@@ -106,12 +109,6 @@
 			 * @since 0.4
 			 */
 			do_action( 'largo_after_header' );
-	
-			get_template_part( 'partials/nav', 'main' );
-
-			if ( SHOW_SECONDARY_NAV === TRUE ) {
-				get_template_part( 'partials/nav', 'secondary' );
-			}
 
 			get_template_part('partials/homepage-alert'); 
 
