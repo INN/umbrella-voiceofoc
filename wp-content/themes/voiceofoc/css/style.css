@@ -345,6 +345,13 @@ ul.nav .mobile-call-to-action {
 #main-nav.navbar ul.nav .mobile-call-to-action {
   display: none;
 }
+.widget #main-nav li {
+  overflow: visible;
+  margin-bottom: 0;
+}
+.widget #main-nav ul.dropdown-menu {
+  margin-top: 0;
+}
 .navbar {
   font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 15px;
