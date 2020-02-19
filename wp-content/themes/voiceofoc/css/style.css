@@ -346,12 +346,17 @@ ul.nav .mobile-call-to-action {
   display: none;
 }
 .navbar {
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
 }
 .navbar .navbar-inner {
   background-color: #f3f4f3;
   color: #fff;
   font-weight: bold;
+}
+.navbar .navbar-inner .nav {
+  font-size: 15px;
 }
 .navbar .navbar-inner .nav > li > a {
   color: #000000;
@@ -533,7 +538,7 @@ body.single-post .hero.is-image.span12 {
   margin-left: 0;
 }
 h1.entry-title {
-  font-family: "futura-pt-bold";
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -760,7 +765,7 @@ h5.widgettitle {
 #header-donate-sidebar a {
   background: #F68121;
   color: #fff;
-  font-family: futura-pt-bold, "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
   font-size: 16px;
   padding: 4px 10px;
   margin-left: 0.25em;
