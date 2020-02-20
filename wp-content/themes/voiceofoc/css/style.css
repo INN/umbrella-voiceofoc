@@ -345,9 +345,23 @@ ul.nav .mobile-call-to-action {
 #main-nav.navbar ul.nav .mobile-call-to-action {
   display: none;
 }
+.widget #main-nav ul.nav {
+  position: static;
+  left: unset;
+  float: none;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.widget #main-nav ul.nav > li {
+  text-align: left;
+  display: inline-block;
+  float: none;
+}
 .widget #main-nav li {
   overflow: visible;
   margin-bottom: 0;
+  float: none;
 }
 .widget #main-nav ul.dropdown-menu {
   margin-top: 0;

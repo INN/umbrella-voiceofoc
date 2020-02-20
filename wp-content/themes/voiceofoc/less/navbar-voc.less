@@ -23,9 +23,23 @@ ul.nav .mobile-call-to-action, {
 
 // https://github.com/INN/umbrella-voiceofoc/issues/34#issuecomment-586066468
 .widget #main-nav {
+  ul.nav {
+    position: static;
+    left: unset;
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    > li {
+      text-align: left;
+      display: inline-block;
+      float: none;
+    }
+  }
   li {
     overflow: visible;
     margin-bottom: 0;
+    float: none;
   }
   ul.dropdown-menu {
     margin-top: 0;
