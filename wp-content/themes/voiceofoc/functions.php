@@ -60,24 +60,6 @@ add_action( 'wp_head', 'voiceofoc_typekit' );
 
 /**
  * Added by request
- * @since Largo 0.5.5.3
- * @since February 20, 2017
- */
-function voiceofoc_adsbygoogle() {
-	?>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({
-		google_ad_client: "ca-pub-1576598093855162",
-		enable_page_level_ads: true
-		});
-		</script>
-	<?php
-}
-add_action( 'wp_head', 'voiceofoc_adsbygoogle' );
-
-/**
- * Added by request
  * @since April 27, 2017
  */
 define( 'SHOW_GLOBAL_NAV', false );
