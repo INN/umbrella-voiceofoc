@@ -17,19 +17,19 @@ if ( is_front_page() || is_home() || is_archive() ): ?>
 	  <div class="nav-shelf">
 		<ul class="nav">
 			<?php
-					$args = array(
-						'theme_location' => 'main-nav',
-						'depth'		 => 0,
-						'container'	 => false,
-						'items_wrap' => '%3$s',
-						'menu_class' => 'nav',
-						'walker'	 => new Bootstrap_Walker_Nav_Menu()
-					);
-					largo_cached_nav_menu($args);
-				?>
-				</ul>
-				<ul class="nav visible-phone">
-					<?php if (has_nav_menu('global-nav')) { ?>
+				$args = array(
+					'theme_location' => 'main-nav',
+					'depth'		 => 0,
+					'container'	 => false,
+					'items_wrap' => '%3$s',
+					'menu_class' => 'nav',
+					'walker'	 => new Bootstrap_Walker_Nav_Menu()
+				);
+				largo_cached_nav_menu($args);
+			?>
+			</ul>
+			<ul class="nav visible-phone">
+				<?php if (has_nav_menu('global-nav')) { ?>
 					<li class="menu-item-has-childen dropdown">
 						<a href="javascript:void(0);" class="dropdown-toggle"><?php
 								//try to get the menu name from global-nav
@@ -48,19 +48,18 @@ if ( is_front_page() || is_home() || is_archive() ): ?>
 							largo_cached_nav_menu($args);
 						?>
 					</li>
-					<?php } ?>
-				</ul>
-			</div>
-
-		<?php if ( is_home() || is_front_page() ) { ?>
-		<div id="header-search">
-			<form class="form-search" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<div class="input-append">
-					<input type="text" placeholder="<?php _e('Search', 'largo'); ?>" class="input-medium appendedInputButton search-query" value="" name="s" /><button type="submit" class="search-submit btn"><i class="icon-search"></i></button>
+				<?php } ?>
+			</ul>
+			<?php if ( is_home() || is_front_page() ) { ?>
+				<div id="header-search">
+					<form class="form-search" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<div class="input-append">
+							<input type="text" placeholder="<?php _e('Search', 'largo'); ?>" class="input-medium appendedInputButton search-query" value="" name="s" /><button type="submit" class="search-submit btn"><i class="icon-search"></i></button>
+						</div>
+					</form>
 				</div>
-			</form>
+			<?php } ?>
 		</div>
-		<?php } ?>
 	</div>
   </div>
 </nav>
