@@ -20,22 +20,53 @@ ul.nav .mobile-call-to-action, {
     display: none;
   }
 }
+
+// https://github.com/INN/umbrella-voiceofoc/issues/34#issuecomment-586066468
+.widget #main-nav {
+  ul.nav {
+    position: static;
+    left: unset;
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    > li {
+      text-align: left;
+      display: inline-block;
+      float: none;
+    }
+  }
+  li {
+    overflow: visible;
+    margin-bottom: 0;
+    float: none;
+  }
+  ul.dropdown-menu {
+    margin-top: 0;
+  }
+}
+
 .navbar {
-  font-family: @headlineFontFamily;
+  font-family: @sansFontFamilyLight;
+  font-size: 15px;
+  font-weight: 700;
 
   .navbar-inner {
     background-color: @navbarBackground;
     color: #fff;
     font-weight: bold;
+    .nav {
+      font-size: 15px;
+    }
     .nav > li > a {
-      color: #fff;
+      color: @navbarLinkColor;
     }
     li.dropdown .dropdown-menu li a:hover {
-      color: #fff;
+      color: @navbarLinkColor;
       background-color: @ocOrange;
     }
     .caret:before {
-      border-top-color: #fff;
+      border-top-color: @navbarLinkColor;
     }
   }
   li > a:hover,
@@ -43,7 +74,7 @@ ul.nav .mobile-call-to-action, {
     background-color: @ocOrange;
     color: @white;
     .caret:before {
-      border-top-color: #fff;
+      border-top-color: @navbarLinkColorHover;
     }
   }
 }

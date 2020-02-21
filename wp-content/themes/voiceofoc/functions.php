@@ -40,10 +40,8 @@ add_action('init', 'voiceofoc_image_sizes', 20);
  * @since Largo 0.4
  */
 function voiceofoc_stylesheet() {
-	$suffix = (LARGO_DEBUG)? '' : '.min';
-
 	wp_dequeue_style( 'largo-child-styles' );
-	wp_enqueue_style( 'voiceofoc', get_stylesheet_directory_uri().'/css/style' . $suffix . '.css' );
+	wp_enqueue_style( 'voiceofoc', get_stylesheet_directory_uri().'/css/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'voiceofoc_stylesheet', 20 );
 
@@ -54,7 +52,7 @@ add_action( 'wp_enqueue_scripts', 'voiceofoc_stylesheet', 20 );
 function voiceofoc_typekit() {
 		// normal Typekit script:
 	?>
-		<script src="https://use.typekit.net/xyq0vny.js"></script>
+		<script src="https://use.typekit.net/uyg0zvo.js"></script>
 		<script>try{Typekit.load({ async: false });}catch(e){}</script>
 	<?php
 }
@@ -129,7 +127,7 @@ add_action( 'widgets_init', 'voiceofoc_sponsorhome_sidebar' );
 
 // Add display for registered Sidebar
 function voiceofoc_sponsorhome_sidebar_display($post, $query) {
-	if ( is_active_sidebar( 'voiceofoc_sponsorhome_sidebar' ) && $query->current_post == 0 ) :
+	if ( is_active_sidebar( 'voiceofoc_sponsorhome_sidebar' ) && $query->current_post == 1 ) :
 		echo '<div id="sponsorhome-sidebar" class="clearfix sponsorship-widget-area">';
 				dynamic_sidebar( 'voiceofoc_sponsorhome_sidebar' );
 		echo '</div>';
@@ -339,3 +337,12 @@ function voiceofoc_facebook_pixel() {
 	<?php
 }
 add_action('wp_head', 'voiceofoc_facebook_pixel');
+
+function inn_logo() {
+		?>
+			<a href="//inn.org/">
+				<img id="inn-logo" src="<?php echo(get_template_directory_uri() . "/img/inn_dark.svg"); ?>" alt="<?php printf(__("%s is a member of the Institute for Nonprofit News", "largo"), get_bloginfo('name')); ?>" />
+			</a>
+		<?php
+
+}
