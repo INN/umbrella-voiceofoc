@@ -1,14 +1,5 @@
 <?php
 /**
- * Add search box to main nav
- * uncomment this and remove partials/nav-main.php when 0.5.5 ships
- */
-function voiceofoc_add_search_box() {
-	get_template_part( 'partials/voiceofoc-nav-search-form' );
-}
-add_action( 'largo_after_main_nav_shelf', 'voiceofoc_add_search_box' );
-
-/**
  * Add the top term as a class on the post_class output
  *
  * @filter post_class
