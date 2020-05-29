@@ -103,14 +103,16 @@
   clear: both;
 }
 .visuallyhidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
   border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
 }
 .hide-text {
   font: 0/0 a;
@@ -317,7 +319,11 @@ footer #boilerplate a:hover {
     display: block;
   }
 }
+.screen-reader-text,
 .back-to-top {
+  clip-path: inset(50%);
+  position: absolute !important;
+  word-wrap: normal !important;
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -429,21 +435,8 @@ nav.navbar div.navbar-inner {
 .navbar li.home-icon > a img {
   height: 40px;
 }
-.navbar-inner #header-search {
-  float: right;
-  margin: 6px 6px 0 0;
-}
-#header-search button {
-  border: 1px solid #cccccc;
-  background-color: #fff;
-}
-@media (max-width: 1170px) {
-  #header-search {
-    display: none;
-  }
-}
 #secondary-nav ul {
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 #secondary-nav ul li,
 #secondary-nav ul li.menu-label {
@@ -559,7 +552,7 @@ body.single-post .hero.is-image.span12 {
   margin-left: 0;
 }
 h1.entry-title {
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -786,7 +779,7 @@ h5.widgettitle {
 #header-donate-sidebar a {
   background: #F68121;
   color: #fff;
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 16px;
   padding: 4px 10px;
   margin-left: 0.25em;
@@ -984,14 +977,14 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   margin-top: 10px;
 }
 .archive-background h1 {
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 .archive-background .related-topics {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 }
 .archive-background .related-topics strong {
   text-transform: uppercase;
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 .partials-content-archive .entry-content h5.byline,
 .partials-content-archive .entry-content h5.top-tag {
@@ -1069,7 +1062,7 @@ body.normal.page-template-page-clean article.page > header.entry-header {
   margin-top: 0.5em;
 }
 .stories h2.entry-title {
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 body {
   font-family: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
@@ -1084,7 +1077,7 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 blockquote {
   border-left-color: #F68121;
@@ -1113,7 +1106,7 @@ span.date-published {
   max-height: 150px;
 }
 #site-footer .widgettitle {
-  font-family: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+  font-family: "century-gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 22px;
 }
 #site-footer p,

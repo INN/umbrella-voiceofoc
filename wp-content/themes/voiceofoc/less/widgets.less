@@ -17,6 +17,15 @@ h5.widgettitle {
   }
 }
 
+.largo-recent-posts h5 {
+  font-family: @serifFontFamily;
+  font-style: italic;
+  font-size: 24px;
+  color: @black;
+  a {
+    color: @black;
+  }
+}
 #sidebar {
   @media ( min-width: 769px ) {
     border-left: @homeRule;
@@ -31,15 +40,6 @@ h5.widgettitle {
   .widget:last-child::after {
     display: none;
     border-bottom: none;
-  }
-  .largo-recent-posts h5 {
-    font-family: @serifFontFamily;
-    font-style: italic;
-    font-size: 24px;
-    color: @black;
-    a {
-      color: @black;
-    }
   }
   // these should be the same
   .widgettitle,
