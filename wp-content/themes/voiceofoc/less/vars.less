@@ -5,6 +5,7 @@
 @ocOrange: #F68121;
 @red: #c0333a;
 @blue: #326ca6;
+@beige: #f3f4f3;
 
 @black: #000000;
 @lightestgray: #eaeaea; // limited to comments box
@@ -25,8 +26,8 @@
 
 // Font families
 @sansFontFamily: "futura-pt-condensed", "Avant Garde Condensed Bold", "ITC Avant Garde Condensed Bold", "Futura Condensed ExtraBold", "DIN Condensed Bold", Impact, sans-serif;
-@sansFontFamilyLight: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; // http://www.cssfontstack.com/Avant-Garde
-@headlineFontFamily: "futura-pt-bold", "Avant Garde Bold", "ITC Avant Garde Bold", "Apple SD Gothic Neo Heavy", AppleSDGothicNeo-Heavy, "Arial Black", "Helvetica Neue Bold", sans-serif;
+@sansFontFamilyLight: "century-gothic", CenturyGothic, AppleGothic, sans-serif; // http://www.cssfontstack.com/Avant-Garde
+@headlineFontFamily: @sansFontFamilyLight;
 @serifFontFamily: "adobe-garamond-pro", Georgia, "Times New Roman", Times, serif;
 
 // Messing with Largo
@@ -40,14 +41,15 @@
 // -------------------------
 @navbarHeight:                    40px;
 @navbarFontSize:                  15px;
-@navbarBackground:                @black;
+@navbarBackground:                @beige;
 @navbarBackgroundHighlight:       lighten(@dkgray, 15%);
-@navbarText:                      @white;
-@navbarLinkColor:                 @white;
-@navbarLinkColorHover:            @grayLighter;
+@navbarText:                      @black;
+@navbarLinkColor:                 @black;
+@navbarLinkColorHover:            @navbarLinkColor;
 @navbarLinkColorActive:           @navbarLinkColorHover;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      @navbarBackground;
+@navbarFont:                      @sansFontFamilyLight;
 
 // Dropdowns
 // -------------------------

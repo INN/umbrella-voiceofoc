@@ -17,6 +17,15 @@ h5.widgettitle {
   }
 }
 
+.largo-recent-posts h5 {
+  font-family: @serifFontFamily;
+  font-style: italic;
+  font-size: 24px;
+  color: @black;
+  a {
+    color: @black;
+  }
+}
 #sidebar {
   @media ( min-width: 769px ) {
     border-left: @homeRule;
@@ -31,15 +40,6 @@ h5.widgettitle {
   .widget:last-child::after {
     display: none;
     border-bottom: none;
-  }
-  .largo-recent-posts h5 {
-    font-family: @serifFontFamily;
-    font-style: italic;
-    font-size: 24px;
-    color: @black;
-    a {
-      color: @black;
-    }
   }
   // these should be the same
   .widgettitle,
@@ -157,7 +157,7 @@ h5.widgettitle {
   a {
     background: @ocOrange;
     color: #fff;
-    font-family: futura-pt-bold,"Avant Garde Bold","ITC Avant Garde Bold","Apple SD Gothic Neo Heavy",AppleSDGothicNeo-Heavy,"Arial Black","Helvetica Neue Bold",sans-serif;
+    font-family: @headlineFontFamily;
     font-size: 16px;
     padding: 4px 10px;
     margin-left: .25em;
